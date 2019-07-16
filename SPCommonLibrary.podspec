@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SPCommonLibrary"
-  s.version      = "0.0.1.5"
+  s.version      = "0.0.1.6"
   s.summary      = "公共库"
 
   # This description is used to generate tags and improve search results.
@@ -66,7 +66,7 @@ Pod::Spec.new do |s|
 
   # s.platform     = :ios
    s.platform     = :ios, "9.0"
-
+  s.swift_version = '4.2'
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
