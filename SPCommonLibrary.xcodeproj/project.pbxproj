@@ -9,10 +9,21 @@
 /* Begin PBXBuildFile section */
 		5B091DF8CCE47DAC28E4BCDC /* Pods_SPCommonLibraryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C66E74EDA931661CF13E964 /* Pods_SPCommonLibraryTests.framework */; };
 		90643ADF176D77CF135CAE8F /* Pods_SPCommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538BF0DF0E8A5244131C1FAD /* Pods_SPCommonLibrary.framework */; };
+		9E07235322DC2AE200E5068A /* SPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E07235222DC2AE200E5068A /* SPRequestManager.swift */; };
+		9E07235522DC2BE800E5068A /* SPRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E07235422DC2BE800E5068A /* SPRequestModel.swift */; };
+		9E07235722DD75B100E5068A /* SPNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E07235622DD75B100E5068A /* SPNetWorkManager.swift */; };
+		9E07235922DD7B4F00E5068A /* SPUploadImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E07235822DD7B4F00E5068A /* SPUploadImageModel.swift */; };
+		9E16B74F2255FE0000BF1A50 /* SPImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16B74E2255FE0000BF1A50 /* SPImage.swift */; };
+		9E16B7512255FF6D00BF1A50 /* SPDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16B7502255FF6D00BF1A50 /* SPDevice.swift */; };
+		9E16B7532255FF8700BF1A50 /* SPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16B7522255FF8700BF1A50 /* SPColor.swift */; };
+		9E16B7552255FFAB00BF1A50 /* SPLanguages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16B7542255FFAB00BF1A50 /* SPLanguages.swift */; };
+		9E16B7572256122300BF1A50 /* SPAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16B7562256122300BF1A50 /* SPAuthorization.swift */; };
 		9E9C529A224F551700DDE7C6 /* SPCommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9C5290224F551700DDE7C6 /* SPCommonLibrary.framework */; };
 		9E9C529F224F551700DDE7C6 /* SPCommonLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C529E224F551700DDE7C6 /* SPCommonLibraryTests.swift */; };
 		9E9C52A1224F551700DDE7C6 /* SPCommonLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9C5293224F551700DDE7C6 /* SPCommonLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E9C52AB224F58BD00DDE7C6 /* SPCommonLibrary.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C52AA224F58BD00DDE7C6 /* SPCommonLibrary.podspec */; };
+		9EAD4BA922C7588A007D7BB3 /* SPBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD4BA822C7588A007D7BB3 /* SPBase.swift */; };
+		9EAD4BAB22C75900007D7BB3 /* SPArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD4BAA22C75900007D7BB3 /* SPArray.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +40,15 @@
 		4C66E74EDA931661CF13E964 /* Pods_SPCommonLibraryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPCommonLibraryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		538BF0DF0E8A5244131C1FAD /* Pods_SPCommonLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SPCommonLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C251AB005139F9DD210853 /* Pods-SPCommonLibraryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPCommonLibraryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPCommonLibraryTests/Pods-SPCommonLibraryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E07235222DC2AE200E5068A /* SPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRequestManager.swift; sourceTree = "<group>"; };
+		9E07235422DC2BE800E5068A /* SPRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRequestModel.swift; sourceTree = "<group>"; };
+		9E07235622DD75B100E5068A /* SPNetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNetWorkManager.swift; sourceTree = "<group>"; };
+		9E07235822DD7B4F00E5068A /* SPUploadImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPUploadImageModel.swift; sourceTree = "<group>"; };
+		9E16B74E2255FE0000BF1A50 /* SPImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImage.swift; sourceTree = "<group>"; };
+		9E16B7502255FF6D00BF1A50 /* SPDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDevice.swift; sourceTree = "<group>"; };
+		9E16B7522255FF8700BF1A50 /* SPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPColor.swift; sourceTree = "<group>"; };
+		9E16B7542255FFAB00BF1A50 /* SPLanguages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPLanguages.swift; sourceTree = "<group>"; };
+		9E16B7562256122300BF1A50 /* SPAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAuthorization.swift; sourceTree = "<group>"; };
 		9E9C5290224F551700DDE7C6 /* SPCommonLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SPCommonLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9C5293224F551700DDE7C6 /* SPCommonLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCommonLibrary.h; sourceTree = "<group>"; };
 		9E9C5294224F551700DDE7C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +56,8 @@
 		9E9C529E224F551700DDE7C6 /* SPCommonLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCommonLibraryTests.swift; sourceTree = "<group>"; };
 		9E9C52A0224F551700DDE7C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E9C52AA224F58BD00DDE7C6 /* SPCommonLibrary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SPCommonLibrary.podspec; sourceTree = "<group>"; };
+		9EAD4BA822C7588A007D7BB3 /* SPBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBase.swift; sourceTree = "<group>"; };
+		9EAD4BAA22C75900007D7BB3 /* SPArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPArray.swift; sourceTree = "<group>"; };
 		E1907EE5B64CCAF383EA488D /* Pods-SPCommonLibraryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPCommonLibraryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPCommonLibraryTests/Pods-SPCommonLibraryTests.release.xcconfig"; sourceTree = "<group>"; };
 		E654DEA5605CD60D0D855414 /* Pods-SPCommonLibrary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPCommonLibrary.release.xcconfig"; path = "Pods/Target Support Files/Pods-SPCommonLibrary/Pods-SPCommonLibrary.release.xcconfig"; sourceTree = "<group>"; };
 		FAF5A43D0E7C92348E6CFD7A /* Pods-SPCommonLibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SPCommonLibrary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SPCommonLibrary/Pods-SPCommonLibrary.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +104,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9E16B73C2255D8D200BF1A50 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9E07235222DC2AE200E5068A /* SPRequestManager.swift */,
+				9E07235422DC2BE800E5068A /* SPRequestModel.swift */,
+				9E07235622DD75B100E5068A /* SPNetWorkManager.swift */,
+				9E07235822DD7B4F00E5068A /* SPUploadImageModel.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		9E16B73E2255D8D200BF1A50 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		9E16B73F2255D8D200BF1A50 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		9E16B7402255D91400BF1A50 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				9E16B74E2255FE0000BF1A50 /* SPImage.swift */,
+				9E16B7502255FF6D00BF1A50 /* SPDevice.swift */,
+				9E16B7522255FF8700BF1A50 /* SPColor.swift */,
+				9E16B7542255FFAB00BF1A50 /* SPLanguages.swift */,
+				9E16B7562256122300BF1A50 /* SPAuthorization.swift */,
+				9EAD4BA822C7588A007D7BB3 /* SPBase.swift */,
+				9EAD4BAA22C75900007D7BB3 /* SPArray.swift */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
 		9E9C5286224F551700DDE7C6 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +167,10 @@
 		9E9C5292224F551700DDE7C6 /* SPCommonLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				9E16B7402255D91400BF1A50 /* Public */,
+				9E16B73F2255D8D200BF1A50 /* Pay */,
+				9E16B73C2255D8D200BF1A50 /* Request */,
+				9E16B73E2255D8D200BF1A50 /* Share */,
 				9E9C5293224F551700DDE7C6 /* SPCommonLibrary.h */,
 				9E9C5294224F551700DDE7C6 /* Info.plist */,
 			);
@@ -180,12 +245,14 @@
 		9E9C5287224F551700DDE7C6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SP;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Peng;
 				TargetAttributes = {
 					9E9C528F224F551700DDE7C6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					9E9C5298224F551700DDE7C6 = {
 						CreatedOnToolsVersion = 10.1;
@@ -290,6 +357,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E07235322DC2AE200E5068A /* SPRequestManager.swift in Sources */,
+				9E16B7572256122300BF1A50 /* SPAuthorization.swift in Sources */,
+				9EAD4BAB22C75900007D7BB3 /* SPArray.swift in Sources */,
+				9E07235722DD75B100E5068A /* SPNetWorkManager.swift in Sources */,
+				9EAD4BA922C7588A007D7BB3 /* SPBase.swift in Sources */,
+				9E07235522DC2BE800E5068A /* SPRequestModel.swift in Sources */,
+				9E07235922DD7B4F00E5068A /* SPUploadImageModel.swift in Sources */,
+				9E16B7512255FF6D00BF1A50 /* SPDevice.swift in Sources */,
+				9E16B74F2255FE0000BF1A50 /* SPImage.swift in Sources */,
+				9E16B7552255FFAB00BF1A50 /* SPLanguages.swift in Sources */,
+				9E16B7532255FF8700BF1A50 /* SPColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FAF5A43D0E7C92348E6CFD7A /* Pods-SPCommonLibrary.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -455,6 +534,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.huangshupeng.SPCommonLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E654DEA5605CD60D0D855414 /* Pods-SPCommonLibrary.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -490,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 62C251AB005139F9DD210853 /* Pods-SPCommonLibraryTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SPCommonLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -508,6 +590,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1907EE5B64CCAF383EA488D /* Pods-SPCommonLibraryTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SPCommonLibraryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
