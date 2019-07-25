@@ -12,7 +12,7 @@
 		9E07235322DC2AE200E5068A /* SPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E07235222DC2AE200E5068A /* SPRequestManager.swift */; };
 		9E07235522DC2BE800E5068A /* SPRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E07235422DC2BE800E5068A /* SPRequestModel.swift */; };
 		9E07235722DD75B100E5068A /* SPNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E07235622DD75B100E5068A /* SPNetWorkManager.swift */; };
-		9E07235922DD7B4F00E5068A /* SPUploadImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E07235822DD7B4F00E5068A /* SPUploadImageModel.swift */; };
+		9E07235922DD7B4F00E5068A /* SPUploadFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E07235822DD7B4F00E5068A /* SPUploadFileModel.swift */; };
 		9E16B74F2255FE0000BF1A50 /* SPImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16B74E2255FE0000BF1A50 /* SPImage.swift */; };
 		9E16B7512255FF6D00BF1A50 /* SPDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16B7502255FF6D00BF1A50 /* SPDevice.swift */; };
 		9E16B7532255FF8700BF1A50 /* SPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16B7522255FF8700BF1A50 /* SPColor.swift */; };
@@ -43,7 +43,7 @@
 		9E07235222DC2AE200E5068A /* SPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRequestManager.swift; sourceTree = "<group>"; };
 		9E07235422DC2BE800E5068A /* SPRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRequestModel.swift; sourceTree = "<group>"; };
 		9E07235622DD75B100E5068A /* SPNetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPNetWorkManager.swift; sourceTree = "<group>"; };
-		9E07235822DD7B4F00E5068A /* SPUploadImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPUploadImageModel.swift; sourceTree = "<group>"; };
+		9E07235822DD7B4F00E5068A /* SPUploadFileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPUploadFileModel.swift; sourceTree = "<group>"; };
 		9E16B74E2255FE0000BF1A50 /* SPImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImage.swift; sourceTree = "<group>"; };
 		9E16B7502255FF6D00BF1A50 /* SPDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPDevice.swift; sourceTree = "<group>"; };
 		9E16B7522255FF8700BF1A50 /* SPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPColor.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 				9E07235222DC2AE200E5068A /* SPRequestManager.swift */,
 				9E07235422DC2BE800E5068A /* SPRequestModel.swift */,
 				9E07235622DD75B100E5068A /* SPNetWorkManager.swift */,
-				9E07235822DD7B4F00E5068A /* SPUploadImageModel.swift */,
+				9E07235822DD7B4F00E5068A /* SPUploadFileModel.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -363,7 +363,7 @@
 				9E07235722DD75B100E5068A /* SPNetWorkManager.swift in Sources */,
 				9EAD4BA922C7588A007D7BB3 /* SPBase.swift in Sources */,
 				9E07235522DC2BE800E5068A /* SPRequestModel.swift in Sources */,
-				9E07235922DD7B4F00E5068A /* SPUploadImageModel.swift in Sources */,
+				9E07235922DD7B4F00E5068A /* SPUploadFileModel.swift in Sources */,
 				9E16B7512255FF6D00BF1A50 /* SPDevice.swift in Sources */,
 				9E16B74F2255FE0000BF1A50 /* SPImage.swift in Sources */,
 				9E16B7552255FFAB00BF1A50 /* SPLanguages.swift in Sources */,

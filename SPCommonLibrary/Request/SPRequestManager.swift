@@ -97,7 +97,7 @@ class SPRequestManager {
     /// - Parameters:
     ///   - model: 参数
     ///   - complete: 回调
-    class func sp_upload(model : SPUploadImageModel,complete : SPRequestComplete?){
+    class func sp_upload(model : SPUploadFileModel,complete : SPRequestComplete?){
         guard let urlString = model.url else {
             sp_dealComplete(data: nil, error: nil, errorMsg: SPREQUESTFAILURL, complete: complete)
             return
@@ -122,7 +122,13 @@ class SPRequestManager {
             }
             for imageStruct in model.dataList! {
                 if let data = imageStruct.data {
-                    formData.append(data, withName: imageStruct.name, fileName: sp_getString(string: imageStruct.fileName), mimeType: sp_getString(string: imageStruct.mimeType))
+                    if sp_getString(string: imageStruct.fileName).count > 0 , sp_getString(string: imageStruct.mimeType).count > 0 {
+                          formData.append(data, withName: imageStruct.name, fileName: sp_getString(string: imageStruct.fileName), mimeType: sp_getString(string: imageStruct.mimeType))
+                    }else if sp_getString(string: imageStruct.mimeType).count > 0 {
+                        formData.append(data, withName: imageStruct.name, mimeType: sp_getString(string: imageStruct.mimeType))
+                    }else {
+                        formData.append(data, withName: imageStruct.name)
+                    }
                 }
             }
         }, to: url) { (encodingResult) in

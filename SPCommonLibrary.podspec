@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SPCommonLibrary"
-  s.version      = "0.0.1.6"
+  s.version      = "0.0.1.7"
   s.summary      = "公共库"
 
   # This description is used to generate tags and improve search results.
@@ -96,14 +96,14 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = "Classes/**/*.h"
     s.subspec "Public" do |ss|
-        ss.source_files = "SPCommonLibrary/Public/**/*"
+        ss.source_files =  "SPCommonLibrary/SPCommonLibrary.h",,"SPCommonLibrary/Public/**/*"
     end
 
-    s.subspec "Request" do |ss|
-        ss.source_files =  "SPCommonLibrary/Request/**/*"
-        ss.dependency "Alamofire"
-        ss.dependency "SPCommonLibrary/Public"
-    end
+   s.subspec "Request" do |ss|
+         ss.source_files =  "SPCommonLibrary/Request/**/*"
+         ss.dependency "Alamofire"
+         ss.dependency "SPCommonLibrary/Public"
+     end
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

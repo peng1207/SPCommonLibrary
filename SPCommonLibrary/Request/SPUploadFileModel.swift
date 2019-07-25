@@ -7,7 +7,7 @@
 //  上传图片的mode
 
 import Foundation
-class SPUploadImageModel {
+class SPUploadFileModel {
     /// 上传的路径
     var url : String?
     /// 参数
@@ -15,11 +15,11 @@ class SPUploadImageModel {
     /// 请求返回值类型
     var reponseFormat : SPReponseFormat = .json
     /// 文件数组
-    var dataList : [SPUploadImageStruct]?
+    var dataList : [SPUploadFileStruct]?
     var isRequest : Bool = false
 }
 
-struct SPUploadImageStruct {
+struct SPUploadFileStruct {
     /// 上传的文件
     var data : Data?
     /// 后台检图片类型的，主要是后缀名
