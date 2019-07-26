@@ -11,7 +11,7 @@ import AVFoundation
 import Photos
 
 /// 是否有权限回调 auth true 有权限  false 没有权限
-typealias AuthorizedBlock = (_ auth : Bool) -> Void
+public typealias AuthorizedBlock = (_ auth : Bool) -> Void
 
 // 权限表
 public class SPAuthorizatio{
