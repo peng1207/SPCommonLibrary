@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SPCommonLibrary"
-  s.version      = "0.0.1.9"
+  s.version      = "0.0.1.10"
   s.summary      = "公共库"
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SPCommonLibrary/**/*"
+  s.source_files  = "SPCommonLibrary/*.swift"
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
