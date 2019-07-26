@@ -11,8 +11,8 @@ import Alamofire
 import CoreTelephony
 //import Reachability
 /// 网络发生状态通知
-let SP_NETWORK_NOTIFICATION = "SP_NETWORK_NOTIFICATION"
-class SPNetWorkManager : NSObject {
+public let SP_NETWORK_NOTIFICATION = "SP_NETWORK_NOTIFICATION"
+public class SPNetWorkManager : NSObject {
     
     private static let netManager = SPNetWorkManager()
     private var netWorkStatus :  NetworkReachabilityManager.NetworkReachabilityStatus = .reachable(NetworkReachabilityManager.ConnectionType.ethernetOrWiFi)
@@ -51,14 +51,14 @@ class SPNetWorkManager : NSObject {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: SP_NETWORK_NOTIFICATION), object: nil)
     }
     /// 开启网络监听和移动网络监听
-    class func sp_start(){
+    public class func sp_start(){
         SPNetWorkManager.instance().sp_start()
         SPNetWorkManager.instance().sp_startWWan()
     }
     /// 判断是否没有网络
     ///
     /// - Returns: true 没有网络 false 有网络
-    class func sp_notReachable()->Bool{
+    public class func sp_notReachable()->Bool{
         if instance().reachManager.isReachable {
             return false
         }
@@ -67,7 +67,7 @@ class SPNetWorkManager : NSObject {
     /// 是否无网络变成有网络
     ///
     /// - Returns: true 是从无网络变成有网络 false 不是
-    class func sp_isNotChangehave()->Bool {
+    public class func sp_isNotChangehave()->Bool {
         if instance().netWorkOldStatus == .notReachable {
             if !sp_notReachable() {
                 return true
@@ -78,19 +78,19 @@ class SPNetWorkManager : NSObject {
     /// 是否是wifi网络
     ///
     /// - Returns: true wifi 网络 false 不是wifi网络
-    class func sp_isWifi() -> Bool{
+    public class func sp_isWifi() -> Bool{
         return instance().reachManager.isReachableOnEthernetOrWiFi
     }
     /// 是否移动网络
     ///
     /// - Returns: true 移动网 false 不是移动网络
-    class func sp_isWwan() -> Bool{
+    public class func sp_isWwan() -> Bool{
         return instance().reachManager.isReachableOnWWAN
     }
     /// 判断移动网络是否开启
     ///
     /// - Returns: true 开启移动网络 false 关闭移动网络
-    class func sp_isOpenWwan() -> Bool {
+    public class func sp_isOpenWwan() -> Bool {
         return instance().wwanStatus == .restricted ? false : true
     }
 }

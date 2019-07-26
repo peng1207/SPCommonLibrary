@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     
-    class func sp_image(color:UIColor,size : CGSize = CGSize(width: 1, height: 1)) ->UIImage?{
+    public class func sp_image(color:UIColor,size : CGSize = CGSize(width: 1, height: 1)) ->UIImage?{
         UIGraphicsBeginImageContext(size)
         let context = UIGraphicsGetCurrentContext()
         context?.setFillColor(color.cgColor)
@@ -20,7 +20,7 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
-    class func sp_image(view : UIView)->UIImage?{
+    public class func sp_image(view : UIView)->UIImage?{
         let saveFrame = view.frame
         var saveContentOffset : CGPoint = CGPoint.zero
         var isScroll = false
@@ -49,7 +49,7 @@ extension UIImage {
     ///
     /// - Parameter imgae: 需要处理的图片
     /// - Returns: 处理后的图片
-    class func sp_picRotating(imgae:CIImage?) -> CIImage? {
+    public class func sp_picRotating(imgae:CIImage?) -> CIImage? {
         guard let outputImage = imgae else {
             return nil
         }
@@ -75,14 +75,14 @@ extension UIImage {
     ///   - textColor: 文字颜色
     ///   - point: 添加文字的位置
     /// - Returns:  添加文字之后的图片
-    class func sp_drawText(inputImg:UIImage,text : String, font : UIFont = UIFont.systemFont(ofSize: 14),textColor : UIColor = UIColor.white,point:CGPoint = CGPoint(x: 0, y: 0))->UIImage?{
+    public class func sp_drawText(inputImg:UIImage,text : String, font : UIFont = UIFont.systemFont(ofSize: 14),textColor : UIColor = UIColor.white,point:CGPoint = CGPoint(x: 0, y: 0))->UIImage?{
         
         if text.count > 0 {
             let size = inputImg.size
             UIGraphicsBeginImageContext(size)
             inputImg.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
             let textAttributes = [ NSAttributedString.Key.foregroundColor: textColor ,NSAttributedString.Key.font : font]
-           
+            
             let textSize = NSString(string: text).size(withAttributes: textAttributes)
             let textFrame = CGRect(x: point.x, y: point.y, width: textSize.width, height: textSize.height)
             NSString(string: text).draw(in: textFrame, withAttributes: textAttributes)
@@ -102,7 +102,7 @@ extension UIImage {
     ///   - textColor: 文字颜色
     ///   - point: 添加文字的位置
     /// - Returns:  添加文字之后的图片
-    class func sp_drawText(inputImg : CIImage,text : String, font : UIFont = UIFont.systemFont(ofSize: 14),textColor : UIColor = UIColor.white,point:CGPoint = CGPoint(x: 0, y: 0))->CIImage?{
+    public class func sp_drawText(inputImg : CIImage,text : String, font : UIFont = UIFont.systemFont(ofSize: 14),textColor : UIColor = UIColor.white,point:CGPoint = CGPoint(x: 0, y: 0))->CIImage?{
         let image = UIImage(ciImage: inputImg)
         let outputImg = sp_drawText(inputImg: image, text: text, font: font, textColor: textColor,point: point)
         if let outImg = outputImg, let outCIImg = CIImage(image: outImg) {
@@ -119,7 +119,7 @@ extension UIImage {
     ///   - textColor: 文字颜色
     ///   - point: 添加文字的位置
     /// - Returns:  添加文字之后的图片
-    class func sp_drawText(inputImg : CGImage,text : String, font : UIFont = UIFont.systemFont(ofSize: 14),textColor : UIColor = UIColor.white,point:CGPoint = CGPoint(x: 0, y: 0))->CGImage?{
+    public class func sp_drawText(inputImg : CGImage,text : String, font : UIFont = UIFont.systemFont(ofSize: 14),textColor : UIColor = UIColor.white,point:CGPoint = CGPoint(x: 0, y: 0))->CGImage?{
         let image = UIImage(cgImage: inputImg)
         let outputImg = sp_drawText(inputImg: image, text: text, font: font, textColor: textColor,point:point)
         if let outImg = outputImg, let outCGImg = outImg.cgImage {

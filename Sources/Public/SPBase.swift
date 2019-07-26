@@ -15,25 +15,25 @@ import UIKit
  
  - returns: font
  */
-func sp_fontSize(fontSize: CGFloat) -> UIFont{
+public func sp_fontSize(fontSize: CGFloat) -> UIFont{
     return UIFont.systemFont(ofSize: fontSize)
 }
 /// 获取状态栏高度
 ///
 /// - Returns: 高度
-func sp_statusBarHeight() -> CGFloat{
+public func sp_statusBarHeight() -> CGFloat{
     return UIApplication.shared.statusBarFrame.height
 }
 /// 获取屏幕的宽度
 ///
 /// - Returns: 宽度
-func sp_screenWidth()->CGFloat{
+public func sp_screenWidth()->CGFloat{
     return UIScreen.main.bounds.size.width
 }
 /// 获取屏幕的高度
 ///
 /// - Returns: 高度
-func sp_screenHeight()->CGFloat{
+public func sp_screenHeight()->CGFloat{
     return UIScreen.main.bounds.size.height
 }
 /// 打印
@@ -43,7 +43,7 @@ func sp_screenHeight()->CGFloat{
 ///   - file: 文件
 ///   - methodName: 方法名（函数）
 ///   - lineNumber: 行数
-func sp_log<T>(message : T,file : String = #file,methodName: String = #function, lineNumber: Int = #line){
+public func sp_log<T>(message : T,file : String = #file,methodName: String = #function, lineNumber: Int = #line){
     #if DEBUG
     let fileName = (file as NSString).lastPathComponent
     print("\(fileName).\(methodName)[\(lineNumber)]\(Date().timeIntervalSince1970):\(message)")
@@ -54,7 +54,7 @@ func sp_log<T>(message : T,file : String = #file,methodName: String = #function,
 /// - Parameters:
 ///   - queueName:  线程名字
 ///   - complete: 回调
-func sp_sync(queueName : String? = "com.queue.defauleQueue" ,complete : ()->Void){
+public func sp_sync(queueName : String? = "com.queue.defauleQueue" ,complete : ()->Void){
     let queue = DispatchQueue(label: queueName!)
     queue.sync {
         complete()
@@ -63,7 +63,7 @@ func sp_sync(queueName : String? = "com.queue.defauleQueue" ,complete : ()->Void
 /// 主线程
 ///
 /// - Parameter comlete: 回调
-func sp_mainQueue(comlete:@escaping ()->Void){
+public func sp_mainQueue(comlete:@escaping ()->Void){
     DispatchQueue.main.async {
         comlete()
     }
@@ -74,7 +74,7 @@ func sp_mainQueue(comlete:@escaping ()->Void){
 /// - Parameters:
 ///   - time: 延迟时间
 ///   - complete: 回调
-func sp_asyncAfter(time : TimeInterval,complete:@escaping ()->Void){
+public func sp_asyncAfter(time : TimeInterval,complete:@escaping ()->Void){
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now()+time) {
         complete()
     }
@@ -83,7 +83,7 @@ func sp_asyncAfter(time : TimeInterval,complete:@escaping ()->Void){
 ///
 /// - Parameter array: 数组
 /// - Returns: 数量
-func sp_count(array:Array<Any>?) -> Int{
+public func sp_count(array:Array<Any>?) -> Int{
     if let listArray = array {
         return listArray.count
     }else{
@@ -94,7 +94,7 @@ func sp_count(array:Array<Any>?) -> Int{
 ///
 /// - Parameter array: 数据
 /// - Returns: 是否
-func sp_isArray(array:Any?) -> Bool {
+public func sp_isArray(array:Any?) -> Bool {
     if let _ : [Any] = array as? [Any]  {
         return true
     }else{
@@ -105,7 +105,7 @@ func sp_isArray(array:Any?) -> Bool {
 ///
 /// - Parameter dic: 数据
 /// - Returns: 是否
-func sp_isDic(dic : Any?) -> Bool{
+public func sp_isDic(dic : Any?) -> Bool{
     if let _ : [String : Any] = dic as? [String : Any] {
         return true
     }else{
@@ -116,7 +116,7 @@ func sp_isDic(dic : Any?) -> Bool{
 ///
 /// - Parameter string: 字符串
 /// - Returns: 字符串
-func sp_getString(string:Any?) ->  String{
+public func sp_getString(string:Any?) ->  String{
     if string == nil{
         return ""
     }
@@ -136,14 +136,14 @@ func sp_getString(string:Any?) ->  String{
 }
 
 /// 隐藏键盘
-func sp_hideKeyboard(){
+public func sp_hideKeyboard(){
     UIApplication.shared.keyWindow?.endEditing(true)
 }
 /// 字典转json字符串
 ///
 /// - Parameter dic: 字典
 /// - Returns: json字符串
-func sp_dicValueString(_ dic:[String : Any]) -> String?{
+public func sp_dicValueString(_ dic:[String : Any]) -> String?{
     
     if !JSONSerialization.isValidJSONObject(dic) {
         sp_log(message: "无法解析")
@@ -158,7 +158,7 @@ func sp_dicValueString(_ dic:[String : Any]) -> String?{
 ///
 /// - Parameter str: json字符串
 /// - Returns: 字典
-func  sp_stringValueDic(_ str: String) -> [String : Any]?{
+public func  sp_stringValueDic(_ str: String) -> [String : Any]?{
     let data = str.data(using: String.Encoding.utf8)
     if let d = data {
         if let dict = try? JSONSerialization.jsonObject(with: d, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String : Any] {
@@ -171,7 +171,7 @@ func  sp_stringValueDic(_ str: String) -> [String : Any]?{
 ///
 /// - Parameter str: json字符串
 /// - Returns: 数组
-func sp_stringValueArr(_ str : String) -> [Any]?{
+public func sp_stringValueArr(_ str : String) -> [Any]?{
     let data = str.data(using: String.Encoding.utf8)
     if let d = data{
         if let array = try? JSONSerialization.jsonObject(with: d, options: JSONSerialization.ReadingOptions.mutableContainers)  as? [Any]{
@@ -185,7 +185,7 @@ func sp_stringValueArr(_ str : String) -> [Any]?{
 ///
 /// - Parameter array: 数组
 /// - Returns: 字符串
-func sp_arrayValueString(_ array : [Any]) -> String?{
+public func sp_arrayValueString(_ array : [Any]) -> String?{
     if !JSONSerialization.isValidJSONObject(array) {
         sp_log(message: "无法解析")
         return ""
@@ -199,7 +199,7 @@ func sp_arrayValueString(_ array : [Any]) -> String?{
 ///
 /// - Parameter notification: 键盘弹起通知
 /// - Returns: 高度
-func sp_getKeyBoardheight(notification:Notification)->CGFloat{
+public func sp_getKeyBoardheight(notification:Notification)->CGFloat{
     let userinfo: NSDictionary = notification.userInfo! as NSDictionary
     
     let nsValue = userinfo.object(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue

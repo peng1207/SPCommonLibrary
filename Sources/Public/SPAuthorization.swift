@@ -14,12 +14,12 @@ import Photos
 typealias AuthorizedBlock = (_ auth : Bool) -> Void
 
 // 权限表
-class SPAuthorizatio{
+public class SPAuthorizatio{
     
     /// 相机权限
     ///
     /// - Parameter authoriedBlock: 回调
-    class func isRightCamera(authoriedBlock : AuthorizedBlock?) -> Void {
+   public class func isRightCamera(authoriedBlock : AuthorizedBlock?) -> Void {
         guard let authoriedComplete = authoriedBlock  else {
             return
         }
@@ -39,7 +39,7 @@ class SPAuthorizatio{
     /// 相册权限
     ///
     /// - Parameter authoriedBlock: 回调
-    class func isRightPhoto(authoriedBlock :  AuthorizedBlock?) -> Void {
+   public class func isRightPhoto(authoriedBlock :  AuthorizedBlock?) -> Void {
         guard let authoriedComplete = authoriedBlock  else {
             return
         }
@@ -62,7 +62,7 @@ class SPAuthorizatio{
     /// 是否麦克风权限
     ///
     /// - Parameter authorizedBlock: 回调
-    class func isRightRecord(authorizedBlock : AuthorizedBlock?) -> Void{
+   public class func isRightRecord(authorizedBlock : AuthorizedBlock?) -> Void{
         guard let authorizedComplete = authorizedBlock else {
             return
         }

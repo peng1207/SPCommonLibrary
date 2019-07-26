@@ -7,11 +7,11 @@
 //
 
 import Foundation
-extension Array where Element: Equatable {
+public extension Array where Element: Equatable {
     /// 删除objec对象
     ///
     /// - Parameter object: 对象
-    mutating func remove(object: Element) {
+    public mutating func remove(object: Element) {
         if let index = index(of: object) {
             remove(at: index)
         }
@@ -20,7 +20,7 @@ extension Array where Element: Equatable {
     ///
     /// - Parameter object: 某个元素
     /// - Returns: 次数
-    func sp_number(of object:Element)->Int{
+   public func sp_number(of object:Element)->Int{
         var count = 0
         for item in self {
             if item == object {
@@ -32,7 +32,7 @@ extension Array where Element: Equatable {
     /// 删除数组数据
     ///
     /// - Parameter array: 数据
-    mutating func remove(of array : [Element]){
+   public mutating func remove(of array : [Element]){
         for model in array {
             remove(object: model)
         }
@@ -40,7 +40,7 @@ extension Array where Element: Equatable {
     /// 删除某个位置的数据
     ///
     /// - Parameter index: 删除的位置
-    mutating func sp_remove(of index:Int){
+   public mutating func sp_remove(of index:Int){
         if index < self.count {
             self.remove(at: index)
         }

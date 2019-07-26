@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
-extension UIColor{
+public extension UIColor{
     ///  十六进制转颜色
     ///
     /// - Parameter hex: 十六进制字符串
     /// - Returns: 颜色
-    class func colorWithHexString (hex: String,alpha: CGFloat = 1) -> UIColor {
+   public class func colorWithHexString (hex: String,alpha: CGFloat = 1) -> UIColor {
         var cString: String = hex.uppercased().trimmingCharacters(in:  CharacterSet.whitespacesAndNewlines)
         if (cString.hasPrefix("#")) {
             cString = (cString as NSString).substring(from: 1)
@@ -35,6 +35,6 @@ extension UIColor{
 ///
 /// - Parameter hex: 十六进制
 /// - Returns: 颜色
-func SPColorForHexString(hex: String,alpha: CGFloat = 1) -> UIColor{
+public func SPColorForHexString(hex: String,alpha: CGFloat = 1) -> UIColor{
     return UIColor.colorWithHexString(hex: hex,alpha: alpha)
 }

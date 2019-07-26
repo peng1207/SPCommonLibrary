@@ -11,13 +11,13 @@ let AppleLanguages = "AppleLanguages"
 
 open class SPLanguageChange {
     
-    static let shareInstance = SPLanguageChange()
+    public static let shareInstance = SPLanguageChange()
     fileprivate var bundle : Bundle?
-    let def = UserDefaults.standard
+    fileprivate let def = UserDefaults.standard
     /*
      获取国际化对应的文字
      */
-   open class func sp_getString(key:String) -> String{
+    public class func sp_getString(key:String) -> String{
         let bundle = SPLanguageChange.shareInstance.bundle
         let str = bundle?.localizedString(forKey: key, value: nil, table: nil)
         return str!
@@ -25,7 +25,7 @@ open class SPLanguageChange {
     /*
      初始化语言
      */
-    func initLanguage(){
+    public func initLanguage(){
         var string : String = ""
         let languages = def.object(forKey: AppleLanguages) as? NSArray
         if languages?.count != 0 {

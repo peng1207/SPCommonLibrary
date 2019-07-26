@@ -14,7 +14,7 @@ import Foundation
 /// - post: post 请求
 /// - head: head 请求
 /// - put: put 请求
-enum SPHttpMethod {
+public enum SPHttpMethod {
     case get
     case post
     case head
@@ -25,23 +25,23 @@ enum SPHttpMethod {
 /// - json: 返回为json
 /// - data: 返回为data
 /// - string: 返回为string
-enum SPReponseFormat {
+public enum SPReponseFormat {
     case json
     case data
     case string
 }
 
-class SPRequestModel {
+public class SPRequestModel {
     /// 请求链接
-    var url : String?
+    public var url : String?
     /// 请求参数
-    var parm : [String: Any]?
+    public var parm : [String: Any]?
     /// 是否在请求中
-    var isRequest : Bool = false
+    public var isRequest : Bool = false
     /// 请求类型
-    var methond : SPHttpMethod = .post
+    public var methond : SPHttpMethod = .post
     /// 请求返回值类型
-    var reponseFormat : SPReponseFormat = .json
+    public var reponseFormat : SPReponseFormat = .json
     /// 超时时间
-    var timeOut : Int = 30
+    public var timeOut : Int = 30
 }
