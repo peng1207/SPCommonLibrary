@@ -65,7 +65,7 @@ s.author             = { "peng1207" => "email@address.com" }
 #
 
 # s.platform     = :ios
-s.platform     = :ios, "9.0"
+s.platform     = :ios, "10.0"
 s.swift_version = '4.2'
 #  When using multiple platforms
 # s.ios.deployment_target = "5.0"
@@ -101,7 +101,7 @@ s.source       = { :git => "https://github.com/peng1207/SPCommonLibrary.git", :t
 
  s.subspec "Request" do |ss|
         ss.source_files =  "Sources/Request/**/*"
-         ss.dependency "Alamofire"
+         ss.dependency "Alamofire","~> 5.0.0-beta.6"
          ss.dependency "SPCommonLibrary/Public"
   end
 
@@ -144,6 +144,6 @@ s.source       = { :git => "https://github.com/peng1207/SPCommonLibrary.git", :t
 # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 # s.dependency "JSONKit", "~> 1.4"
 s.dependency "SnapKit"
-#s.dependency "Alamofire"
+#s.dependency "Alamofire","~> 5.0.0-beta.6"
 end
 
