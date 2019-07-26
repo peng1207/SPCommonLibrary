@@ -20,10 +20,10 @@
 		9E16B7572256122300BF1A50 /* SPAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E16B7562256122300BF1A50 /* SPAuthorization.swift */; };
 		9E9C529A224F551700DDE7C6 /* SPCommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9C5290224F551700DDE7C6 /* SPCommonLibrary.framework */; };
 		9E9C529F224F551700DDE7C6 /* SPCommonLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C529E224F551700DDE7C6 /* SPCommonLibraryTests.swift */; };
-		9E9C52A1224F551700DDE7C6 /* SPCommonLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9C5293224F551700DDE7C6 /* SPCommonLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9E9C52AB224F58BD00DDE7C6 /* SPCommonLibrary.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C52AA224F58BD00DDE7C6 /* SPCommonLibrary.podspec */; };
 		9EAD4BA922C7588A007D7BB3 /* SPBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD4BA822C7588A007D7BB3 /* SPBase.swift */; };
 		9EAD4BAB22C75900007D7BB3 /* SPArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EAD4BAA22C75900007D7BB3 /* SPArray.swift */; };
+		9EDC274522EA93A100F22529 /* SPCommonLibrary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E9C5293224F551700DDE7C6 /* SPCommonLibrary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,7 +193,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E9C52A1224F551700DDE7C6 /* SPCommonLibrary.h in Headers */,
+				9EDC274522EA93A100F22529 /* SPCommonLibrary.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

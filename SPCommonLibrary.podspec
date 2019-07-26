@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SPCommonLibrary"
-  s.version      = "0.0.1.8"
+  s.version      = "0.0.1.9"
   s.summary      = "公共库"
 
   # This description is used to generate tags and improve search results.
@@ -91,19 +91,19 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-# s.source_files  = "SPCommonLibrary", "SPCommonLibrary/**/*.{h,m}"
+  s.source_files  = "SPCommonLibrary/**/*"
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
-    s.subspec "Public" do |ss|
-        ss.source_files =  "SPCommonLibrary/SPCommonLibrary.h","SPCommonLibrary/Public/**/*"
-    end
+#  s.subspec "Public" do |ss|
+#        ss.source_files =  "SPCommonLibrary/SPCommonLibrary.h","SPCommonLibrary/Public/**/*"
+#   end
 
-   s.subspec "Request" do |ss|
-         ss.source_files =  "SPCommonLibrary/Request/**/*"
-         ss.dependency "Alamofire"
-         ss.dependency "SPCommonLibrary/Public"
-     end
+#   s.subspec "Request" do |ss|
+#        ss.source_files =  "SPCommonLibrary/Request/**/*"
+#         ss.dependency "Alamofire"
+#         ss.dependency "SPCommonLibrary/Public"
+#     end
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -144,4 +144,5 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
     s.dependency "SnapKit"
+    s.dependency "Alamofire"
 end
