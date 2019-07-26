@@ -9,7 +9,7 @@
 import Foundation
 let AppleLanguages = "AppleLanguages"
 
-class SPLanguageChange {
+open class SPLanguageChange {
     
     static let shareInstance = SPLanguageChange()
     fileprivate var bundle : Bundle?
@@ -17,7 +17,7 @@ class SPLanguageChange {
     /*
      获取国际化对应的文字
      */
-    class func sp_getString(key:String) -> String{
+   open class func sp_getString(key:String) -> String{
         let bundle = SPLanguageChange.shareInstance.bundle
         let str = bundle?.localizedString(forKey: key, value: nil, table: nil)
         return str!
