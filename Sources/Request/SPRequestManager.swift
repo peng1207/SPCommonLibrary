@@ -18,14 +18,15 @@ typealias SPRequestComplete = (_ data : Any?, _ error : Error?,_ errorMsg : Stri
 
 class SPRequestManager {
 
-    /// 请求对象
-    public static let netManager : SessionManager = {
-        let configuration = URLSessionConfiguration.default
-        configuration.httpAdditionalHeaders = SessionManager.defaultHTTPHeaders
-        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
-        configuration.timeoutIntervalForRequest = 60
-        return Alamofire.SessionManager(configuration: configuration)
-    }()
+//    /// 请求对象
+//    public static let netManager : Session = {
+//        let configuration = URLSessionConfiguration.default
+//        configuration.httpAdditionalHeaders = Session.defaultHTTPHeaders
+//        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
+//        configuration.timeoutIntervalForRequest = 60
+//
+//        return Alamofire.SessionManager(configuration: configuration)
+//    }()
     /// 发起请求
     ///
     /// - Parameters:
@@ -51,7 +52,8 @@ class SPRequestManager {
             case .head:
                 httpMethod = .head
         }
-        let dataRequest = netManager.request(url, method: httpMethod, parameters: model.parm, encoding: JSONEncoding.default, headers: nil)
+    
+        let dataRequest = AF.request(url, method: httpMethod, parameters: model.parm, encoding: JSONEncoding.default, headers: nil)
         model.isRequest = true
         switch model.reponseFormat {
             case .json:
@@ -61,12 +63,12 @@ class SPRequestManager {
             case .data:
                 dataRequest.responseData { (dataResponse : DataResponse<Data>) in
                     model.isRequest = false
-                        sp_dealComplete(data: dataResponse.result.value, error: dataResponse.error,errorMsg: nil, complete: complete)
+                        sp_dealComplete(data: dataResponse.value, error: dataResponse.error,errorMsg: nil, complete: complete)
                 }
             case .string:
                 dataRequest.responseString { (dataResponse : DataResponse) in
                     model.isRequest = false
-                    sp_dealComplete(data: dataResponse.result.value, error: dataResponse.error,errorMsg: nil, complete: complete)
+                    sp_dealComplete(data: dataResponse.value, error: dataResponse.error,errorMsg: nil, complete: complete)
                 }
         }
     }
@@ -78,7 +80,8 @@ class SPRequestManager {
     ///   - complete: 回调
     private class func sp_dealReequest(dataResponse : DataResponse<Any>,model : SPRequestModel,complete : SPRequestComplete?){
         model.isRequest = false
-        sp_dealComplete(data: dataResponse.result.value, error: dataResponse.error,errorMsg: nil, complete: complete)
+       
+        sp_dealComplete(data:  dataResponse.value, error: dataResponse.error,errorMsg: nil, complete: complete)
     }
     /// 处理回调
     ///
@@ -111,7 +114,7 @@ class SPRequestManager {
             return
         }
         model.isRequest = true
-        netManager.upload(multipartFormData: { (formData) in
+       let uploadRequest = AF.upload(multipartFormData: { (formData) in
             if let parm : [String : Any] = model.parm {
                 for (key,value) in parm {
                     let parmData = sp_getString(string: value).data(using: String.Encoding.utf8)
@@ -123,7 +126,7 @@ class SPRequestManager {
             for imageStruct in model.dataList! {
                 if let data = imageStruct.data {
                     if sp_getString(string: imageStruct.fileName).count > 0 , sp_getString(string: imageStruct.mimeType).count > 0 {
-                          formData.append(data, withName: imageStruct.name, fileName: sp_getString(string: imageStruct.fileName), mimeType: sp_getString(string: imageStruct.mimeType))
+                        formData.append(data, withName: imageStruct.name, fileName: sp_getString(string: imageStruct.fileName), mimeType: sp_getString(string: imageStruct.mimeType))
                     }else if sp_getString(string: imageStruct.mimeType).count > 0 {
                         formData.append(data, withName: imageStruct.name, mimeType: sp_getString(string: imageStruct.mimeType))
                     }else {
@@ -131,18 +134,13 @@ class SPRequestManager {
                     }
                 }
             }
-        }, to: url) { (encodingResult) in
-            switch encodingResult{
-                case .failure(let encodingError):
-                    model.isRequest = false
-                    sp_dealComplete(data: nil, error: encodingError,errorMsg: nil, complete: complete)
-                case .success(request: let upload, streamingFromDisk: _, streamFileURL: _):
-                    upload.responseJSON(completionHandler: { (response) in
-                        model.isRequest = false
-                        sp_dealComplete(data: response.result.value, error: response.error,errorMsg: nil, complete: complete)
-                    })
-            }
+        }, to: url)
+        
+        uploadRequest.responseData { (dataResponse) in
+             model.isRequest = false
+             sp_dealComplete(data: dataResponse.value , error: dataResponse.error,errorMsg: nil, complete: complete)
         }
     }
+ 
     
 }

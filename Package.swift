@@ -5,11 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "SPCommonLibrary",
-    platforms: [
-        .iOS(.v10),
-        .macOS(.v10_12),
-        .tvOS(.v10)
-    ],
+//    platforms: [
+//        .iOS(.v10),
+////        .macOS(.v10_12),
+////        .tvOS(.v10)
+//    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -19,7 +19,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.2.0"),
+         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0-beta.6"),
          .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0")
     ],
     targets: [
