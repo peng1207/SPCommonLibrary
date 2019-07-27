@@ -14,7 +14,7 @@ public let SPREQUESTFAILURL = "failure_url"
 /// 参数错误
 public let SPREQUESTFAILPARM = "failure_parm"
 /// 请求的回调
-public typealias SPRequestComplete = (_ data : Any?, _ error : Error?,_ errorMsg : String?)->Void
+internal typealias SPRequestComplete = (_ data : Any?, _ error : Error?,_ errorMsg : String?)->Void
 
 public class SPRequestManager {
     
@@ -32,7 +32,7 @@ public class SPRequestManager {
     /// - Parameters:
     ///   - model: 请求参数
     ///   - complete: 回调
-    public class func sp_request(model : SPRequestModel,complete : SPRequestComplete?){
+    internal class func sp_request(model : SPRequestModel,complete : SPRequestComplete?){
         guard let urlString = model.url else {
             sp_dealComplete(data: nil, error: nil, errorMsg: SPREQUESTFAILURL, complete: complete)
             return
@@ -100,7 +100,7 @@ public class SPRequestManager {
     /// - Parameters:
     ///   - model: 参数
     ///   - complete: 回调
-    public class func sp_upload(model : SPUploadFileModel,complete : SPRequestComplete?){
+    internal class func sp_upload(model : SPUploadFileModel,complete : SPRequestComplete?){
         guard let urlString = model.url else {
             sp_dealComplete(data: nil, error: nil, errorMsg: SPREQUESTFAILURL, complete: complete)
             return
