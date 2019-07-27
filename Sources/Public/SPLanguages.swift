@@ -19,13 +19,24 @@ open class SPLanguageChange {
      */
     public class func sp_getString(key:String) -> String{
         let bundle = SPLanguageChange.shareInstance.bundle
-        let str = bundle?.localizedString(forKey: key, value: nil, table: nil)
-        return str!
+        if let b = bundle {
+            let str =  b.localizedString(forKey: key, value: nil, table: nil)
+            return str
+        }else {
+            SPLanguageChange.shareInstance.sp_initLanguage()
+            let b =  SPLanguageChange.shareInstance.bundle
+            let str = b?.localizedString(forKey: key, value: nil, table: nil)
+            if let s = str {
+                return s
+            }
+        }
+        return key
+       
     }
     /*
      初始化语言
      */
-    public func initLanguage(){
+    public func sp_initLanguage(){
         var string : String = ""
         let languages = def.object(forKey: AppleLanguages) as? NSArray
         if languages?.count != 0 {

@@ -11,15 +11,15 @@ import AVFoundation
 import Photos
 
 /// 是否有权限回调 auth true 有权限  false 没有权限
-internal typealias AuthorizedBlock = (_ auth : Bool) -> Void
+public typealias AuthorizedBlock = (_ auth : Bool) -> Void
 
 // 权限表
-public class SPAuthorizatio{
+open class SPAuthorizatio{
     
     /// 相机权限
     ///
     /// - Parameter authoriedBlock: 回调
-   internal class func isRightCamera(authoriedBlock : AuthorizedBlock?) -> Void {
+    open class func isRightCamera(authoriedBlock :  AuthorizedBlock?) -> Void {
         guard let authoriedComplete = authoriedBlock  else {
             return
         }
@@ -39,7 +39,7 @@ public class SPAuthorizatio{
     /// 相册权限
     ///
     /// - Parameter authoriedBlock: 回调
-   internal class func isRightPhoto(authoriedBlock :  AuthorizedBlock?) -> Void {
+   open class func isRightPhoto(authoriedBlock :  AuthorizedBlock?) -> Void {
         guard let authoriedComplete = authoriedBlock  else {
             return
         }
@@ -62,7 +62,7 @@ public class SPAuthorizatio{
     /// 是否麦克风权限
     ///
     /// - Parameter authorizedBlock: 回调
-   internal class func isRightRecord(authorizedBlock : AuthorizedBlock?) -> Void{
+   open class func isRightRecord(authorizedBlock : AuthorizedBlock?) -> Void{
         guard let authorizedComplete = authorizedBlock else {
             return
         }
