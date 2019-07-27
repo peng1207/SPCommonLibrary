@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "SPCommonLibrary"
-s.version      = "0.0.1.16"
+s.version      = "0.0.1.17"
 s.summary      = "公共库"
 
 # This description is used to generate tags and improve search results.
@@ -144,6 +144,8 @@ s.source       = { :git => "https://github.com/peng1207/SPCommonLibrary.git", :t
 # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 # s.dependency "JSONKit", "~> 1.4"
 s.dependency "SnapKit"
+#s.dependency "RealmSwift"
+#s.dependency "SwiftyJSON"
 #s.dependency "Alamofire","~> 5.0.0-beta.6"
 end
 
