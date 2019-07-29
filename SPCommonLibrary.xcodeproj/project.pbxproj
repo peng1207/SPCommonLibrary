@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		9EDC27A322EBEA8C00F22529 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC27A222EBEA8C00F22529 /* SPView.swift */; };
+		9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
 		OBJ_109 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* AFError.swift */; };
 		OBJ_110 /* AFResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* AFResult.swift */; };
 		OBJ_111 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Alamofire.swift */; };
@@ -158,6 +159,7 @@
 /* Begin PBXFileReference section */
 		9EDC279122EAF88300F22529 /* SPCommonLibrary.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SPCommonLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EDC27A222EBEA8C00F22529 /* SPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPView.swift; sourceTree = "<group>"; };
+		9EDCFA4122EEED1B0058F291 /* SPShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPShare.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* SPAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAuthorization.swift; sourceTree = "<group>"; };
 		OBJ_100 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
@@ -286,6 +288,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9EDCFA4022EEED0E0058F291 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				9EDCFA4122EEED1B0058F291 /* SPShare.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
 		OBJ_16 /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +436,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9EDCFA4022EEED0E0058F291 /* Share */,
 				OBJ_8 /* Public */,
 				OBJ_16 /* Request */,
 			);
@@ -619,6 +630,7 @@
 				9EDC27A322EBEA8C00F22529 /* SPView.swift in Sources */,
 				OBJ_114 /* DispatchQueue+Alamofire.swift in Sources */,
 				OBJ_115 /* EventMonitor.swift in Sources */,
+				9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */,
 				OBJ_116 /* HTTPHeaders.swift in Sources */,
 				OBJ_117 /* HTTPMethod.swift in Sources */,
 				OBJ_118 /* MultipartFormData.swift in Sources */,

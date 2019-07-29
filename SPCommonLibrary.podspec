@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "SPCommonLibrary"
-s.version      = "0.0.1.18"
+s.version      = "0.0.1.19"
 s.summary      = "公共库"
 
 # This description is used to generate tags and improve search results.
@@ -104,7 +104,9 @@ s.source       = { :git => "https://github.com/peng1207/SPCommonLibrary.git", :t
          ss.dependency "Alamofire","~> 5.0.0-beta.6"
          ss.dependency "SPCommonLibrary/Public"
   end
-
+s.subspec "Share" do  |ss|
+    ss.source_files = "Sources/Share/*.swift"
+end
 
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
