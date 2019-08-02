@@ -14,7 +14,7 @@ public class SPShare {
     /// - Parameters:
     ///   - imgs: 图片数组
     ///   - vc: 当前控制器
-    class func sp_share(imgs : [UIImage]?,vc : UIViewController?){
+    public class func sp_share(imgs : [UIImage]?,vc : UIViewController?){
         guard let shareImgs = imgs else {
             return
         }
@@ -33,14 +33,14 @@ public class SPShare {
     /// - Parameters:
     ///   - videoUrls: 视频URL集合
     ///   - vc: 当前控制器
-    class func sp_share(videoUrls : [URL]?,vc : UIViewController?){
+    public class func sp_share(videoUrls : [URL]?,vc : UIViewController?){
         guard let shareList = videoUrls else {
             return
         }
         guard let currentVC = vc else {
             return
         }
-      
+        
         let activityVC = UIActivityViewController(activityItems: shareList, applicationActivities: nil)
         let popover = activityVC.popoverPresentationController
         if (popover != nil) {
@@ -53,7 +53,7 @@ public class SPShare {
     /// - Parameters:
     ///   - shareData: 分享的数据
     ///   - vc: 当前的控制器
-    class func sp_share(shareData:[Any]?,vc : UIViewController?){
+    public class func sp_share(shareData:[Any]?,vc : UIViewController?){
         guard let shareList = shareData else {
             return
         }

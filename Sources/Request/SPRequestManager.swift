@@ -52,7 +52,7 @@ public class SPRequestManager {
         case .head:
             httpMethod = .head
         }
-        
+    
         let dataRequest = AF.request(url, method: httpMethod, parameters: model.parm, encoding: JSONEncoding.default, headers: nil)
         model.isRequest = true
         switch model.reponseFormat {

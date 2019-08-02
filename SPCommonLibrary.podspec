@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "SPCommonLibrary"
-s.version      = "0.0.1.19"
-s.summary      = "公共库"
+s.version      = "0.0.1.20"
+s.summary      = "公共库 提供基础的功能，对第三方请求的封装功能，增加分享功能"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

@@ -21,8 +21,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		9E05D6A122F3C80B00D9E907 /* SPCubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D69F22F3C80B00D9E907 /* SPCubeMap.c */; };
+		9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */; };
 		9EDC27A322EBEA8C00F22529 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC27A222EBEA8C00F22529 /* SPView.swift */; };
 		9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
+		9EDCFA4422EEF27D0058F291 /* SPQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */; };
+		9EDCFA4522EF34DE0058F291 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC27A222EBEA8C00F22529 /* SPView.swift */; };
+		9EDCFA4622EF34DE0058F291 /* SPQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */; };
+		9EDCFA4722EF34F10058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
 		OBJ_109 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* AFError.swift */; };
 		OBJ_110 /* AFResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* AFResult.swift */; };
 		OBJ_111 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Alamofire.swift */; };
@@ -157,10 +163,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E05D69F22F3C80B00D9E907 /* SPCubeMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SPCubeMap.c; sourceTree = "<group>"; };
+		9E05D6A022F3C80B00D9E907 /* SPCubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCubeMap.h; sourceTree = "<group>"; };
+		9E05D6A622F3C9A200D9E907 /* SPCommonLibrary_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCommonLibrary_Bridge_Header.h; sourceTree = "<group>"; };
+		9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSampleBuffer.swift; sourceTree = "<group>"; };
 		9EDC279122EAF88300F22529 /* SPCommonLibrary.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SPCommonLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EDC27A222EBEA8C00F22529 /* SPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPView.swift; sourceTree = "<group>"; };
 		9EDCFA4122EEED1B0058F291 /* SPShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPShare.swift; sourceTree = "<group>"; };
-		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPQRCode.swift; sourceTree = "<group>"; };
+		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* SPAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAuthorization.swift; sourceTree = "<group>"; };
 		OBJ_100 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
 		OBJ_101 /* SPCommonLibrary.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = SPCommonLibrary.xcworkspace; sourceTree = SOURCE_ROOT; };
@@ -446,6 +457,8 @@
 		OBJ_8 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				9E05D69F22F3C80B00D9E907 /* SPCubeMap.c */,
+				9E05D6A022F3C80B00D9E907 /* SPCubeMap.h */,
 				OBJ_9 /* SPArray.swift */,
 				OBJ_10 /* SPAuthorization.swift */,
 				OBJ_11 /* SPBase.swift */,
@@ -454,6 +467,9 @@
 				OBJ_14 /* SPImage.swift */,
 				OBJ_15 /* SPLanguages.swift */,
 				9EDC27A222EBEA8C00F22529 /* SPView.swift */,
+				9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */,
+				9E05D6A622F3C9A200D9E907 /* SPCommonLibrary_Bridge_Header.h */,
+				9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -591,6 +607,11 @@
 			attributes = {
 				LastSwiftMigration = 9999;
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					"Alamofire::Alamofire" = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SPCommonLibrary" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -632,12 +653,14 @@
 				OBJ_115 /* EventMonitor.swift in Sources */,
 				9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */,
 				OBJ_116 /* HTTPHeaders.swift in Sources */,
+				9EDCFA4422EEF27D0058F291 /* SPQRCode.swift in Sources */,
 				OBJ_117 /* HTTPMethod.swift in Sources */,
 				OBJ_118 /* MultipartFormData.swift in Sources */,
 				OBJ_119 /* MultipartUpload.swift in Sources */,
 				OBJ_120 /* NetworkReachabilityManager.swift in Sources */,
 				OBJ_121 /* Notifications.swift in Sources */,
 				OBJ_122 /* OperationQueue+Alamofire.swift in Sources */,
+				9E05D6A122F3C80B00D9E907 /* SPCubeMap.c in Sources */,
 				OBJ_123 /* ParameterEncoder.swift in Sources */,
 				OBJ_124 /* ParameterEncoding.swift in Sources */,
 				OBJ_125 /* Protector.swift in Sources */,
@@ -670,11 +693,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				9EDCFA4722EF34F10058F291 /* SPShare.swift in Sources */,
+				9EDCFA4522EF34DE0058F291 /* SPView.swift in Sources */,
+				9EDCFA4622EF34DE0058F291 /* SPQRCode.swift in Sources */,
 				OBJ_152 /* SPArray.swift in Sources */,
 				OBJ_153 /* SPAuthorization.swift in Sources */,
 				OBJ_154 /* SPBase.swift in Sources */,
 				OBJ_155 /* SPColor.swift in Sources */,
 				OBJ_156 /* SPDevice.swift in Sources */,
+				9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */,
 				OBJ_157 /* SPImage.swift in Sources */,
 				OBJ_158 /* SPLanguages.swift in Sources */,
 				OBJ_159 /* SPNetWorkManager.swift in Sources */,
@@ -789,6 +816,8 @@
 		OBJ_106 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -807,6 +836,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = Alamofire;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
@@ -817,6 +847,8 @@
 		OBJ_107 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -881,6 +913,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/Public/SPCommonLibrary_Bridge_Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SPCommonLibrary;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -909,6 +942,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = Sources/Public/SPCommonLibrary_Bridge_Header.h;
 				SWIFT_VERSION = 5.0;
 				TARGET_NAME = SPCommonLibrary;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
