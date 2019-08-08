@@ -21,11 +21,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		9E05D6A122F3C80B00D9E907 /* SPCubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D69F22F3C80B00D9E907 /* SPCubeMap.c */; };
 		9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */; };
-		9EDC27A322EBEA8C00F22529 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC27A222EBEA8C00F22529 /* SPView.swift */; };
+		9E05D6B922F43F4300D9E907 /* SPCubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D69F22F3C80B00D9E907 /* SPCubeMap.c */; };
+		9E05D6BC22F4402700D9E907 /* SPClipImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */; };
+		9E05D6CF22F7D65100D9E907 /* SPClipToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */; };
+		9E05D6D022F7D65B00D9E907 /* SPClipToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */; };
+		9E9D05C222F7FAE400D89C94 /* SPClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6D122F7E09F00D9E907 /* SPClipView.swift */; };
+		9E9D05DC22FA731000D89C94 /* public_rotate@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 9E9D05D822FA6CCF00D89C94 /* public_rotate@2x.png */; };
+		9E9D05DD22FA731000D89C94 /* public_zoom@2x.png in Sources */ = {isa = PBXBuildFile; fileRef = 9E9D05D922FA6CCF00D89C94 /* public_zoom@2x.png */; };
+		9E9D05DE22FA731000D89C94 /* public_zoom@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 9E9D05DA22FA6CCF00D89C94 /* public_zoom@3x.png */; };
+		9E9D05DF22FA731000D89C94 /* public_rotate@3x.png in Sources */ = {isa = PBXBuildFile; fileRef = 9E9D05DB22FA6CCF00D89C94 /* public_rotate@3x.png */; };
+		9E9D05E422FAD14F00D89C94 /* SPString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9D05E222FAD0DC00D89C94 /* SPString.swift */; };
 		9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
-		9EDCFA4422EEF27D0058F291 /* SPQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */; };
 		9EDCFA4522EF34DE0058F291 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC27A222EBEA8C00F22529 /* SPView.swift */; };
 		9EDCFA4622EF34DE0058F291 /* SPQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */; };
 		9EDCFA4722EF34F10058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
@@ -167,6 +174,14 @@
 		9E05D6A022F3C80B00D9E907 /* SPCubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCubeMap.h; sourceTree = "<group>"; };
 		9E05D6A622F3C9A200D9E907 /* SPCommonLibrary_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCommonLibrary_Bridge_Header.h; sourceTree = "<group>"; };
 		9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSampleBuffer.swift; sourceTree = "<group>"; };
+		9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClipImgVC.swift; sourceTree = "<group>"; };
+		9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipToolView.swift; sourceTree = "<group>"; };
+		9E05D6D122F7E09F00D9E907 /* SPClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClipView.swift; sourceTree = "<group>"; };
+		9E9D05D822FA6CCF00D89C94 /* public_rotate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "public_rotate@2x.png"; sourceTree = "<group>"; };
+		9E9D05D922FA6CCF00D89C94 /* public_zoom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "public_zoom@2x.png"; sourceTree = "<group>"; };
+		9E9D05DA22FA6CCF00D89C94 /* public_zoom@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "public_zoom@3x.png"; sourceTree = "<group>"; };
+		9E9D05DB22FA6CCF00D89C94 /* public_rotate@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "public_rotate@3x.png"; sourceTree = "<group>"; };
+		9E9D05E222FAD0DC00D89C94 /* SPString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPString.swift; sourceTree = "<group>"; };
 		9EDC279122EAF88300F22529 /* SPCommonLibrary.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SPCommonLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EDC27A222EBEA8C00F22529 /* SPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPView.swift; sourceTree = "<group>"; };
 		9EDCFA4122EEED1B0058F291 /* SPShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPShare.swift; sourceTree = "<group>"; };
@@ -299,6 +314,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E05D6BA22F4401900D9E907 /* Clip */ = {
+			isa = PBXGroup;
+			children = (
+				9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */,
+				9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */,
+				9E05D6D122F7E09F00D9E907 /* SPClipView.swift */,
+			);
+			path = Clip;
+			sourceTree = "<group>";
+		};
+		9E9D05D622FA6CCF00D89C94 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				9E9D05D722FA6CCF00D89C94 /* Clip */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		9E9D05D722FA6CCF00D89C94 /* Clip */ = {
+			isa = PBXGroup;
+			children = (
+				9E9D05D822FA6CCF00D89C94 /* public_rotate@2x.png */,
+				9E9D05D922FA6CCF00D89C94 /* public_zoom@2x.png */,
+				9E9D05DA22FA6CCF00D89C94 /* public_zoom@3x.png */,
+				9E9D05DB22FA6CCF00D89C94 /* public_rotate@3x.png */,
+			);
+			path = Clip;
+			sourceTree = "<group>";
+		};
 		9EDCFA4022EEED0E0058F291 /* Share */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,6 +491,8 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9E9D05D622FA6CCF00D89C94 /* Resource */,
+				9E05D6BA22F4401900D9E907 /* Clip */,
 				9EDCFA4022EEED0E0058F291 /* Share */,
 				OBJ_8 /* Public */,
 				OBJ_16 /* Request */,
@@ -470,6 +516,7 @@
 				9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */,
 				9E05D6A622F3C9A200D9E907 /* SPCommonLibrary_Bridge_Header.h */,
 				9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */,
+				9E9D05E222FAD0DC00D89C94 /* SPString.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -648,19 +695,16 @@
 				OBJ_111 /* Alamofire.swift in Sources */,
 				OBJ_112 /* AlamofireExtended.swift in Sources */,
 				OBJ_113 /* CachedResponseHandler.swift in Sources */,
-				9EDC27A322EBEA8C00F22529 /* SPView.swift in Sources */,
 				OBJ_114 /* DispatchQueue+Alamofire.swift in Sources */,
 				OBJ_115 /* EventMonitor.swift in Sources */,
 				9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */,
 				OBJ_116 /* HTTPHeaders.swift in Sources */,
-				9EDCFA4422EEF27D0058F291 /* SPQRCode.swift in Sources */,
 				OBJ_117 /* HTTPMethod.swift in Sources */,
 				OBJ_118 /* MultipartFormData.swift in Sources */,
 				OBJ_119 /* MultipartUpload.swift in Sources */,
 				OBJ_120 /* NetworkReachabilityManager.swift in Sources */,
 				OBJ_121 /* Notifications.swift in Sources */,
 				OBJ_122 /* OperationQueue+Alamofire.swift in Sources */,
-				9E05D6A122F3C80B00D9E907 /* SPCubeMap.c in Sources */,
 				OBJ_123 /* ParameterEncoder.swift in Sources */,
 				OBJ_124 /* ParameterEncoding.swift in Sources */,
 				OBJ_125 /* Protector.swift in Sources */,
@@ -669,6 +713,7 @@
 				OBJ_128 /* RequestInterceptor.swift in Sources */,
 				OBJ_129 /* RequestTaskMap.swift in Sources */,
 				OBJ_130 /* Response.swift in Sources */,
+				9E05D6CF22F7D65100D9E907 /* SPClipToolView.swift in Sources */,
 				OBJ_131 /* ResponseSerialization.swift in Sources */,
 				OBJ_132 /* RetryPolicy.swift in Sources */,
 				OBJ_133 /* ServerTrustEvaluation.swift in Sources */,
@@ -693,18 +738,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				9E9D05DC22FA731000D89C94 /* public_rotate@2x.png in Sources */,
+				9E9D05DD22FA731000D89C94 /* public_zoom@2x.png in Sources */,
+				9E9D05DE22FA731000D89C94 /* public_zoom@3x.png in Sources */,
+				9E9D05DF22FA731000D89C94 /* public_rotate@3x.png in Sources */,
+				9E05D6D022F7D65B00D9E907 /* SPClipToolView.swift in Sources */,
 				9EDCFA4722EF34F10058F291 /* SPShare.swift in Sources */,
 				9EDCFA4522EF34DE0058F291 /* SPView.swift in Sources */,
 				9EDCFA4622EF34DE0058F291 /* SPQRCode.swift in Sources */,
 				OBJ_152 /* SPArray.swift in Sources */,
+				9E05D6BC22F4402700D9E907 /* SPClipImgVC.swift in Sources */,
 				OBJ_153 /* SPAuthorization.swift in Sources */,
 				OBJ_154 /* SPBase.swift in Sources */,
 				OBJ_155 /* SPColor.swift in Sources */,
+				9E9D05C222F7FAE400D89C94 /* SPClipView.swift in Sources */,
 				OBJ_156 /* SPDevice.swift in Sources */,
 				9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */,
 				OBJ_157 /* SPImage.swift in Sources */,
 				OBJ_158 /* SPLanguages.swift in Sources */,
 				OBJ_159 /* SPNetWorkManager.swift in Sources */,
+				9E9D05E422FAD14F00D89C94 /* SPString.swift in Sources */,
+				9E05D6B922F43F4300D9E907 /* SPCubeMap.c in Sources */,
 				OBJ_160 /* SPRequestManager.swift in Sources */,
 				OBJ_161 /* SPRequestModel.swift in Sources */,
 				OBJ_162 /* SPUploadFileModel.swift in Sources */,
@@ -914,7 +968,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_OBJC_BRIDGING_HEADER = Sources/Public/SPCommonLibrary_Bridge_Header.h;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = SPCommonLibrary;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -943,7 +997,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_OBJC_BRIDGING_HEADER = Sources/Public/SPCommonLibrary_Bridge_Header.h;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = SPCommonLibrary;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;

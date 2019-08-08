@@ -95,17 +95,22 @@ s.source       = { :git => "https://github.com/peng1207/SPCommonLibrary.git", :t
 #s.exclude_files = "Classes/Exclude"
 
 # s.public_header_files = "Classes/**/*.h"
- s.subspec "Public" do |ss|
-        ss.source_files =  "Sources/Public/**/*"
-   end
+s.subspec "Public" do |ss|
+    ss.source_files =  "Sources/Public/**/*"
+end
 
- s.subspec "Request" do |ss|
-        ss.source_files =  "Sources/Request/**/*"
-         ss.dependency "Alamofire","~> 5.0.0-beta.6"
-         ss.dependency "SPCommonLibrary/Public"
-  end
+s.subspec "Request" do |ss|
+    ss.source_files =  "Sources/Request/**/*"
+    ss.dependency "Alamofire","~> 5.0.0-beta.6"
+    ss.dependency "SPCommonLibrary/Public"
+end
 s.subspec "Share" do  |ss|
     ss.source_files = "Sources/Share/*.swift"
+end
+s.subspec "Clip" do |ss|
+    ss.source_files = "Sources/Clip/**/*"
+    ss.resources = "Sources/Resource/Clip/*.png"
+    ss.dependency "SPCommonLibrary/Public"
 end
 
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
