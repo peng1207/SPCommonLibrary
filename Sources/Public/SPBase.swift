@@ -15,7 +15,7 @@ import UIKit
  
  - returns: font
  */
-public func sp_fontSize(fontSize: CGFloat) -> UIFont{
+public func  sp_fontSize(fontSize: CGFloat) -> UIFont{
     return UIFont.systemFont(ofSize: fontSize)
 }
 /// 获取状态栏高度
@@ -43,7 +43,10 @@ public func sp_screenHeight()->CGFloat{
 public func sp_scale(value : CGFloat) -> CGFloat{
     return value / UIScreen.main.scale
 }
-
+// 获取屏幕分辨率
+public func sp_screenPixels() -> CGSize {
+    return (UIScreen.main.currentMode?.size)!
+}
 /// 打印
 ///
 /// - Parameters:
@@ -71,7 +74,7 @@ public func sp_sync(queueName : String? = "com.queue.defauleQueue" ,complete : (
 /// 主线程
 ///
 /// - Parameter comlete: 回调
-public func sp_mainQueue(comlete:@escaping ()->Void){
+public func sp_mainQueue (comlete:@escaping ()->Void){
     DispatchQueue.main.async {
         comlete()
     }

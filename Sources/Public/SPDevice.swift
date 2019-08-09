@@ -20,6 +20,9 @@ public let SP_SYSTEMNAME = UIDevice.current.systemName
 public let SP_MODEL = UIDevice.current.model
 /// 设备区域化型号如A1533
 public let SP_LOCALIZEDMODEL = UIDevice.current.localizedModel
+
+public let SP_DEVICE_SCALE = UIScreen.main.scale  //  设备的比例
+
 public let SP_IS_IPAD = { () -> Bool in
     if SP_DEVICE_TYPE == "iPad" {
         return true
@@ -43,3 +46,48 @@ public let SP_IS_IPODTOUCH = { () -> Bool in
         return false
     }
 } () // 是否ipod设备
+/// 9.0系统以上
+public let SP_VERSION_9_UP = { () -> Bool in
+    if #available(iOS 9.0, *){
+        return true
+    }else{
+        return false
+    }
+    
+}()
+/// 10.0系统以上
+public let SP_VERSION_10_UP = { () -> Bool in
+    if #available(iOS 10.0, *){
+        return true
+    }else{
+        return false
+    }
+    
+}()
+/// 11.0系统以上
+public let SP_VERSION_11_UP = { () -> Bool in
+    if #available(iOS 11.0, *){
+        return true
+    }else{
+        return false
+    }
+    
+}()
+/// 12.0系统以上
+public let SP_VERSION_12_UP = { () -> Bool in
+    if #available(iOS 12.0, *){
+        return true
+    }else{
+        return false
+    }
+    
+}()
+/// 13.0系统以上
+public let SP_VERSION_13_UP = { () -> Bool in
+    if #available(iOS 13.0, *){
+        return true
+    }else{
+        return false
+    }
+    
+}()

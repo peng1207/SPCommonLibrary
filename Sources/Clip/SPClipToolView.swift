@@ -23,7 +23,7 @@ class SPClipToolView:  UIView{
         let btn = UIButton(type: UIButton.ButtonType.custom)
         btn.setTitle("cance", for: UIControl.State.normal)
         btn.setTitleColor(UIColor.white, for: UIControl.State.normal)
-        btn.titleLabel?.font = sp_fontSize(fontSize: 16)
+        btn.titleLabel?.font =  sp_fontSize(fontSize: 16)
         btn.addTarget(self, action: #selector(sp_clickCance), for: UIControl.Event.touchUpInside)
         return btn
     }()
@@ -31,7 +31,7 @@ class SPClipToolView:  UIView{
         let btn = UIButton(type: UIButton.ButtonType.custom)
         btn.setTitle("done", for: UIControl.State.normal)
         btn.setTitleColor(UIColor.white, for: UIControl.State.normal)
-         btn.titleLabel?.font = sp_fontSize(fontSize: 16)
+         btn.titleLabel?.font =  sp_fontSize(fontSize: 16)
         btn.addTarget(self, action: #selector(sp_clickDone), for: UIControl.Event.touchUpInside)
         return btn
     }()
