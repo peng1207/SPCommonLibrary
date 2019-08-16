@@ -37,16 +37,29 @@ public extension UIImage {
         if view is UIScrollView {
             isScroll = true
         }
+        var viewSize : CGRect = view.bounds
         /// 若view 是scrollview 则生成图片为 contentSize
         if isScroll , let scrollView = view as? UIScrollView {
-            UIGraphicsBeginImageContextWithOptions(scrollView.contentSize, true, UIScreen.main.scale)
+            viewSize = CGRect(origin: CGPoint.zero, size: scrollView.contentSize)
+            if viewSize.size.width == 0 {
+                viewSize = CGRect(origin: CGPoint.zero, size: CGSize(width: view.frame.size.width, height: scrollView.contentSize.height))
+            }
+            if viewSize.size.height == 0 {
+                viewSize = CGRect(origin: CGPoint.zero, size: CGSize(width: viewSize.size.width, height: view.frame.size.height))
+            }
             saveContentOffset = scrollView.contentOffset
             scrollView.contentOffset = CGPoint.zero
-            scrollView.frame = CGRect(x: 0, y: 0, width: scrollView.contentSize.width, height: scrollView.contentSize.height)
+            scrollView.frame = CGRect(x: 0, y: 0, width: viewSize.size.width, height:viewSize.size.height)
+            UIGraphicsBeginImageContextWithOptions(viewSize.size, true, UIScreen.main.scale)
+          
         }else{
             UIGraphicsBeginImageContextWithOptions(view.bounds.size, true, UIScreen.main.scale)
         }
-        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        if let context = UIGraphicsGetCurrentContext() {
+            view.layer.render(in: context)
+        }else{
+            view.drawHierarchy(in: viewSize, afterScreenUpdates: true) // 高清截图
+        }
         let img = UIGraphicsGetImageFromCurrentImageContext()
         if isScroll {
             view.frame = saveFrame
@@ -391,4 +404,34 @@ public extension UIImage {
         UIGraphicsEndImageContext()
         return maskedImage ?? nil
     }
+    
 }
+extension UIView {
+    
+    /**
+     Get the view's screen shot, this function may be called from any thread of your app.
+     
+     - returns: The screen shot's image.
+     */
+    func screenShot() -> UIImage? {
+        
+        guard bounds.size.height > 0 && bounds.size.width > 0 else {
+            return nil
+        }
+        UIGraphicsBeginImageContextWithOptions(bounds.size, true, UIScreen.main.scale)
+        
+        // 之前解决不了的模糊问题就是出在这个方法上
+        //        layer.render(in: UIGraphicsGetCurrentContext()!)
+        
+        
+        // Renders a snapshot of the complete view hierarchy as visible onscreen into the current context.
+        self.drawHierarchy(in: self.bounds, afterScreenUpdates: true)  // 高清截图
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+}
+
+
+

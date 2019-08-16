@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "SPCommonLibrary"
-s.version      = "0.0.1.22"
+s.version      = "0.0.1.23"
 s.summary      = "公共库 提供基础的功能，对第三方请求的封装功能，增加分享功能"
 
 # This description is used to generate tags and improve search results.
@@ -53,7 +53,7 @@ s.license      = "MIT"
 #  profile URL.
 #
 
-s.author             = { "peng1207" => "email@address.com" }
+s.author             = { "peng1207" => "825844231@qq.com" }
 # Or just: s.author    = "peng1207"
 # s.authors            = { "peng1207" => "email@address.com" }
 # s.social_media_url   = "http://twitter.com/peng1207"
@@ -109,10 +109,15 @@ s.subspec "Share" do  |ss|
 end
 s.subspec "Clip" do |ss|
     ss.source_files = "Sources/Clip/**/*"
-    ss.resources = "Sources/Resource/Clip/*.png"
+    ss.resources = "Sources/Resource/*.bundle"
     ss.dependency "SPCommonLibrary/Public"
 end
-
+s.subspec "ImagePicker" do |ss|
+    ss.source_files = "Sources/ImagePicker/**/*"
+    ss.dependency "SPCommonLibrary/Public"
+    ss.resources = "Sources/Resource/*.bundle"
+end
+    
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
 #  A list of resources included with the Pod. These are copied into the
