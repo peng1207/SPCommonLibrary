@@ -294,3 +294,25 @@ public func sp_appLogoImg()->UIImage?{
    
     return nil
 }
+
+
+public func sp_topVC()->UIViewController?{
+    var resultVC : UIViewController?
+    resultVC = sp_nextTopVC(vc: UIApplication.shared.keyWindow?.rootViewController)
+    while ((resultVC?.presentedViewController) != nil) {
+        resultVC = sp_nextTopVC(vc: resultVC?.presentedViewController)
+    }
+    
+    return resultVC
+}
+private func sp_nextTopVC(vc : UIViewController?)->UIViewController?{
+    guard let viewController = vc else {
+        return nil
+    }
+    if let navVC : UINavigationController = viewController as? UINavigationController {
+        return sp_nextTopVC(vc: navVC.topViewController)
+    }else if let tabVC : UITabBarController = viewController as? UITabBarController {
+       return sp_nextTopVC(vc: tabVC.selectedViewController)
+    }
+      return viewController
+}

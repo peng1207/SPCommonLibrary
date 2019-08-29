@@ -303,23 +303,26 @@ public extension UIImage {
     ///   - maxImageLenght: 最大的尺寸
     ///   - maxSizeKB: 最大的大小
     /// - Returns: 转换后的图片
-    func sp_resizeImg(maxImageLenght : CGFloat, maxSizeKB : CGFloat = 1024)->UIImage{
+    func sp_resizeImg(maxImageLenght : CGFloat = 0, maxSizeKB : CGFloat = 1024)->UIImage{
         var maxSize = maxSizeKB
         var maxImgSize = maxImageLenght
         if maxSize <= 0.0 {
             maxSize = 1024.0
         }
-        if maxImgSize <= 0.0 {
-            maxImgSize = 1024.0
-        }
+//        if maxImgSize <= 0.0 {
+//            maxImgSize = 1024.0
+//        }
         var newSize = CGSize(width: self.size.width, height: self.size.height)
-        let tempHeight = newSize.height / maxImgSize
-        let tempWidth = newSize.width / maxImgSize
-        if tempWidth > 1.0 && tempWidth > tempHeight{
-            newSize = CGSize(width: self.size.width / tempWidth, height: self.size.height / tempWidth)
-        }else{
-             newSize = CGSize(width: self.size.width / tempHeight, height: self.size.height / tempHeight)
+        if maxImgSize > 0 {
+            let tempHeight = newSize.height / maxImgSize
+            let tempWidth = newSize.width / maxImgSize
+            if tempWidth > 1.0 && tempWidth > tempHeight{
+                newSize = CGSize(width: self.size.width / tempWidth, height: self.size.height / tempWidth)
+            }else{
+                newSize = CGSize(width: self.size.width / tempHeight, height: self.size.height / tempHeight)
+            }
         }
+       
         UIGraphicsBeginImageContext(newSize)
         self.draw(in: CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height))
         let newImg = UIGraphicsGetImageFromCurrentImageContext()
