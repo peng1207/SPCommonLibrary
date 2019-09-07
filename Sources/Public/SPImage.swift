@@ -183,7 +183,7 @@ public extension UIImage {
     ///   - pixelBufferPool:
     ///   - pixelFormatType: 类型
     /// - Returns: CVPixelBuffer
-    class func sp_pixelBuffer(fromImage image:CGImage,pixelBufferPool:CVPixelBufferPool?,pixelFormatType : OSType = kCVPixelFormatType_32BGRA) -> CVPixelBuffer?{
+    class func sp_pixelBuffer(fromImage image:CGImage,pixelBufferPool:CVPixelBufferPool?,pixelFormatType : OSType = kCVPixelFormatType_32BGRA,pixelSize : CGSize = sp_screenPixels()) -> CVPixelBuffer?{
         let cfnumPointer = UnsafeMutablePointer<UnsafeRawPointer>.allocate(capacity: 1)
         let cfnum = CFNumberCreate(kCFAllocatorDefault, .intType, cfnumPointer)
         let keys: [CFString] = [kCVPixelBufferCGImageCompatibilityKey, kCVPixelBufferCGBitmapContextCompatibilityKey, kCVPixelBufferBytesPerRowAlignmentKey]
@@ -195,7 +195,7 @@ public extension UIImage {
         
         let options = CFDictionaryCreate(kCFAllocatorDefault, keysPointer, valuesPointer, keys.count, nil, nil)
         
-        let size = sp_screenPixels()
+        let size = pixelSize
         let width = size.width
         let height = size.height
         var pxbuffer: CVPixelBuffer?
