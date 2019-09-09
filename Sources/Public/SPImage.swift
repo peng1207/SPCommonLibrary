@@ -192,7 +192,6 @@ public extension UIImage {
         let valuesPointer =  UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: 1)
         keysPointer.initialize(to: keys)
         valuesPointer.initialize(to: values)
-        
         let options = CFDictionaryCreate(kCFAllocatorDefault, keysPointer, valuesPointer, keys.count, nil, nil)
         
         let size = pixelSize
@@ -202,10 +201,12 @@ public extension UIImage {
         // if pxbuffer = nil, you will get status = -6661
         var status = CVPixelBufferCreate(kCFAllocatorDefault, Int(width), Int(height),
                                          pixelFormatType, options, &pxbuffer)
-        
+        if pxbuffer == nil {
+            return pxbuffer
+        }
         status = CVPixelBufferLockBaseAddress(pxbuffer!, CVPixelBufferLockFlags(rawValue: 0));
         
-        let bufferAddress = CVPixelBufferGetBaseAddress(pxbuffer!);
+        let bufferAddress = CVPixelBufferGetBaseAddress(pxbuffer!)
         
         let rgbColorSpace = CGColorSpaceCreateDeviceRGB();
         let bytesperrow = CVPixelBufferGetBytesPerRow(pxbuffer!)
@@ -217,9 +218,9 @@ public extension UIImage {
                                 space: rgbColorSpace,
                                 bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue | CGBitmapInfo.byteOrder32Little.rawValue)
         
-        context?.draw(image, in: CGRect(x:0, y:0, width:width, height: height));
-        status = CVPixelBufferUnlockBaseAddress(pxbuffer!, CVPixelBufferLockFlags(rawValue: 0));
-        return pxbuffer!;
+        context?.draw(image, in: CGRect(x:0, y:0, width:width, height: height))
+        status = CVPixelBufferUnlockBaseAddress(pxbuffer!, CVPixelBufferLockFlags(rawValue: 0))
+        return pxbuffer
     }
     
     /// 图片切圆角

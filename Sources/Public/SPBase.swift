@@ -45,7 +45,11 @@ public func sp_scale(value : CGFloat) -> CGFloat{
 }
 // 获取屏幕分辨率
 public func sp_screenPixels() -> CGSize {
-    return (UIScreen.main.currentMode?.size)!
+    if let size = UIScreen.main.currentMode?.size {
+        return CGSize(width: size.width , height: size.height)
+    }else{
+         return CGSize.zero
+    }
 }
 /// 打印
 ///
