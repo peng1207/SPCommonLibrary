@@ -71,6 +71,7 @@ public func sp_log<T>(message : T,file : String = #file,methodName: String = #fu
 ///   - complete: 回调
 public func sp_sync(queueName : String? = "com.queue.defauleQueue" ,complete : ()->Void){
     let queue = DispatchQueue(label: queueName!)
+//    let queue = DispatchQueue(label: sp_getString(string: queueName), qos: DispatchQoS.utility, attributes: .concurrent)
     queue.sync {
         complete()
     }
@@ -82,7 +83,6 @@ public func sp_mainQueue (comlete:@escaping ()->Void){
     DispatchQueue.main.async {
         comlete()
     }
-    
 }
 /// 执行延迟操作
 ///

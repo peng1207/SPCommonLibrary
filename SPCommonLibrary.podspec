@@ -95,29 +95,37 @@ s.source       = { :git => "https://github.com/peng1207/SPCommonLibrary.git", :t
 #s.exclude_files = "Classes/Exclude"
 
 # s.public_header_files = "Classes/**/*.h"
+# 公共类
 s.subspec "Public" do |ss|
     ss.source_files =  "Sources/Public/**/*"
 end
-
+# 请求功能 监听网络状态
 s.subspec "Request" do |ss|
     ss.source_files =  "Sources/Request/**/*"
     ss.dependency "Alamofire","~> 5.0.0-beta.6"
     ss.dependency "SPCommonLibrary/Public"
 end
+# 分享功能
 s.subspec "Share" do  |ss|
     ss.source_files = "Sources/Share/*.swift"
 end
+# 对图片裁剪功能
 s.subspec "Clip" do |ss|
     ss.source_files = "Sources/Clip/**/*"
     ss.resources = "Sources/Resource/*.bundle"
     ss.dependency "SPCommonLibrary/Public"
 end
+# 选择图片功能
 s.subspec "ImagePicker" do |ss|
     ss.source_files = "Sources/ImagePicker/**/*"
     ss.dependency "SPCommonLibrary/Public"
     ss.resources = "Sources/Resource/*.bundle"
 end
-    
+# 录音功能
+s.subspec "Recording" do |ss|
+    ss.source_files = "Sources/Recording/**/*"
+    ss.dependency "SPCommonLibrary/Public"
+end
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
 #  A list of resources included with the Pod. These are copied into the

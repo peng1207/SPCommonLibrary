@@ -25,6 +25,7 @@
 		9E05D6B922F43F4300D9E907 /* SPCubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D69F22F3C80B00D9E907 /* SPCubeMap.c */; };
 		9E05D6BC22F4402700D9E907 /* SPClipImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */; };
 		9E05D6D022F7D65B00D9E907 /* SPClipToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */; };
+		9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58FB75233364E90023C79F /* SPRecordingManager.swift */; };
 		9E7B1BCD23053C6500146422 /* SPImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BCC23053C6500146422 /* SPImagePickerVC.swift */; };
 		9E7B1BCF23053E4400146422 /* SPImagePickerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */; };
 		9E7B1BD123053E7B00146422 /* SPImagePickerListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BD023053E7B00146422 /* SPImagePickerListCollectionCell.swift */; };
@@ -176,13 +177,13 @@
 		9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClipImgVC.swift; sourceTree = "<group>"; };
 		9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipToolView.swift; sourceTree = "<group>"; };
 		9E05D6D122F7E09F00D9E907 /* SPClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClipView.swift; sourceTree = "<group>"; };
+		9E58FB75233364E90023C79F /* SPRecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRecordingManager.swift; sourceTree = "<group>"; };
 		9E7B1BCC23053C6500146422 /* SPImagePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImagePickerVC.swift; sourceTree = "<group>"; };
 		9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImagePickerListVC.swift; sourceTree = "<group>"; };
 		9E7B1BD023053E7B00146422 /* SPImagePickerListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImagePickerListCollectionCell.swift; sourceTree = "<group>"; };
 		9E7B1BD223054A3600146422 /* SPAlbumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAlbumVC.swift; sourceTree = "<group>"; };
 		9E7B1BD823056B9B00146422 /* SPCommonLibrary.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SPCommonLibrary.bundle; sourceTree = "<group>"; };
 		9E9D05E222FAD0DC00D89C94 /* SPString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPString.swift; sourceTree = "<group>"; };
-		9EDC279122EAF88300F22529 /* SPCommonLibrary.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SPCommonLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EDC27A222EBEA8C00F22529 /* SPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPView.swift; sourceTree = "<group>"; };
 		9EDCFA4122EEED1B0058F291 /* SPShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPShare.swift; sourceTree = "<group>"; };
 		9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPQRCode.swift; sourceTree = "<group>"; };
@@ -324,6 +325,14 @@
 			path = Clip;
 			sourceTree = "<group>";
 		};
+		9E58FB74233364DB0023C79F /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				9E58FB75233364E90023C79F /* SPRecordingManager.swift */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
 		9E7B1BCB23053C5000146422 /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,7 +444,6 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
-				9EDC279122EAF88300F22529 /* SPCommonLibrary.podspec */,
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_21 /* Tests */,
@@ -491,6 +499,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9E58FB74233364DB0023C79F /* Recording */,
 				9E7B1BCB23053C5000146422 /* ImagePicker */,
 				9E9D05D622FA6CCF00D89C94 /* Resource */,
 				9E05D6BA22F4401900D9E907 /* Clip */,
@@ -714,6 +723,7 @@
 				OBJ_127 /* Request.swift in Sources */,
 				OBJ_128 /* RequestInterceptor.swift in Sources */,
 				OBJ_129 /* RequestTaskMap.swift in Sources */,
+				9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */,
 				OBJ_130 /* Response.swift in Sources */,
 				OBJ_131 /* ResponseSerialization.swift in Sources */,
 				OBJ_132 /* RetryPolicy.swift in Sources */,
