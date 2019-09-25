@@ -19,8 +19,8 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-         .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0-beta.6"),
-         .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0")
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0-beta.6"),
+        .package(url: "https://github.com/SnapKit/SnapKit.git", from: "5.0.0")
 //          .package(url: "https://github.com/realm/realm-cocoa.git", from: "3.17.1"),
 //           .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "5.0.0")
     ],
