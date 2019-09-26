@@ -23,6 +23,11 @@
 /* Begin PBXBuildFile section */
 		9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */; };
 		9E2B96B4233C5B5E007EDAE7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9E2B96B3233C5B5E007EDAE7 /* Alamofire */; };
+		9E2B96B5233C5EA2007EDAE7 /* SPLibararyLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39681233C52B0006AB687 /* SPLibararyLanguage.swift */; };
+		9E2B96B6233C5EB8007EDAE7 /* SPBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39663233B73AF006AB687 /* SPBundle.swift */; };
+		9E2B96BD233C5ED7007EDAE7 /* SPClipImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B96B9233C5ED3007EDAE7 /* SPClipImgVC.swift */; };
+		9E2B96BE233C5ED9007EDAE7 /* SPClipToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B96B7233C5ED3007EDAE7 /* SPClipToolView.swift */; };
+		9E2B96BF233C5EDD007EDAE7 /* SPClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B96B8233C5ED3007EDAE7 /* SPClipView.swift */; };
 		9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58FB75233364E90023C79F /* SPRecordingManager.swift */; };
 		9E7B1BCD23053C6500146422 /* SPImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BCC23053C6500146422 /* SPImagePickerVC.swift */; };
 		9E7B1BCF23053E4400146422 /* SPImagePickerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */; };
@@ -33,10 +38,8 @@
 		9EDCFA4522EF34DE0058F291 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC27A222EBEA8C00F22529 /* SPView.swift */; };
 		9EDCFA4622EF34DE0058F291 /* SPQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */; };
 		9EDCFA4722EF34F10058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
-		9EE39664233B73AF006AB687 /* SPBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39663233B73AF006AB687 /* SPBundle.swift */; };
 		9EE39674233C4D50006AB687 /* SPCubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39672233C4D50006AB687 /* SPCubeMap.c */; };
 		9EE3967A233C4E68006AB687 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9EE39679233C4E68006AB687 /* SnapKit */; };
-		9EE39682233C52B0006AB687 /* SPLibararyLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39681233C52B0006AB687 /* SPLibararyLanguage.swift */; };
 		OBJ_152 /* SPArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* SPArray.swift */; };
 		OBJ_153 /* SPAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* SPAuthorization.swift */; };
 		OBJ_154 /* SPBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SPBase.swift */; };
@@ -48,24 +51,15 @@
 		OBJ_160 /* SPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SPRequestManager.swift */; };
 		OBJ_161 /* SPRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* SPRequestModel.swift */; };
 		OBJ_162 /* SPUploadFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* SPUploadFileModel.swift */; };
-		OBJ_164 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SnapKit::SnapKit::Product" /* SnapKit.framework */; };
 		OBJ_165 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 		OBJ_174 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_185 /* SPCommonLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* SPCommonLibraryTests.swift */; };
 		OBJ_186 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* XCTestManifests.swift */; };
 		OBJ_188 /* SPCommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SPCommonLibrary::SPCommonLibrary::Product" /* SPCommonLibrary.framework */; };
-		OBJ_189 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SnapKit::SnapKit::Product" /* SnapKit.framework */; };
 		OBJ_190 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9EDC278B22EAE88400F22529 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SnapKit::SnapKit";
-			remoteInfo = SnapKit;
-		};
 		9EDC278C22EAE88400F22529 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -79,13 +73,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = "SPCommonLibrary::SPCommonLibrary";
 			remoteInfo = SPCommonLibrary;
-		};
-		9EDC278E22EAE88400F22529 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SnapKit::SnapKit";
-			remoteInfo = SnapKit;
 		};
 		9EDC278F22EAE88400F22529 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -106,6 +93,9 @@
 /* Begin PBXFileReference section */
 		9E05D6A622F3C9A200D9E907 /* SPCommonLibrary_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCommonLibrary_Bridge_Header.h; sourceTree = "<group>"; };
 		9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSampleBuffer.swift; sourceTree = "<group>"; };
+		9E2B96B7233C5ED3007EDAE7 /* SPClipToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipToolView.swift; sourceTree = "<group>"; };
+		9E2B96B8233C5ED3007EDAE7 /* SPClipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipView.swift; sourceTree = "<group>"; };
+		9E2B96B9233C5ED3007EDAE7 /* SPClipImgVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipImgVC.swift; sourceTree = "<group>"; };
 		9E58FB75233364E90023C79F /* SPRecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRecordingManager.swift; sourceTree = "<group>"; };
 		9E7B1BCC23053C6500146422 /* SPImagePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImagePickerVC.swift; sourceTree = "<group>"; };
 		9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImagePickerListVC.swift; sourceTree = "<group>"; };
@@ -141,7 +131,6 @@
 		OBJ_9 /* SPArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPArray.swift; sourceTree = "<group>"; };
 		"SPCommonLibrary::SPCommonLibrary::Product" /* SPCommonLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SPCommonLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SPCommonLibrary::SPCommonLibraryTests::Product" /* SPCommonLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SPCommonLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SnapKit::SnapKit::Product" /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +147,6 @@
 			files = (
 				9EE3967A233C4E68006AB687 /* SnapKit in Frameworks */,
 				9E2B96B4233C5B5E007EDAE7 /* Alamofire in Frameworks */,
-				OBJ_164 /* SnapKit.framework in Frameworks */,
 				OBJ_165 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,15 +156,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_188 /* SPCommonLibrary.framework in Frameworks */,
-				OBJ_189 /* SnapKit.framework in Frameworks */,
 				OBJ_190 /* Alamofire.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_232 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +174,9 @@
 		9E7B1BCB23053C5000146422 /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				9E2B96B9233C5ED3007EDAE7 /* SPClipImgVC.swift */,
+				9E2B96B7233C5ED3007EDAE7 /* SPClipToolView.swift */,
+				9E2B96B8233C5ED3007EDAE7 /* SPClipView.swift */,
 				9E7B1BCC23053C6500146422 /* SPImagePickerVC.swift */,
 				9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */,
 				9E7B1BD023053E7B00146422 /* SPImagePickerListCollectionCell.swift */,
@@ -302,7 +285,6 @@
 			children = (
 				"SPCommonLibrary::SPCommonLibrary::Product" /* SPCommonLibrary.framework */,
 				"SPCommonLibrary::SPCommonLibraryTests::Product" /* SPCommonLibraryTests.xctest */,
-				"SnapKit::SnapKit::Product" /* SnapKit.framework */,
 				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
 			);
 			name = Products;
@@ -353,7 +335,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_166 /* PBXTargetDependency */,
 				OBJ_168 /* PBXTargetDependency */,
 			);
 			name = SPCommonLibrary;
@@ -376,7 +357,6 @@
 			);
 			dependencies = (
 				OBJ_191 /* PBXTargetDependency */,
-				OBJ_192 /* PBXTargetDependency */,
 				OBJ_193 /* PBXTargetDependency */,
 			);
 			name = SPCommonLibraryTests;
@@ -396,36 +376,6 @@
 			);
 			name = SPCommonLibraryPackageDescription;
 			productName = SPCommonLibraryPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"SnapKit::SnapKit" /* SnapKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_194 /* Build configuration list for PBXNativeTarget "SnapKit" */;
-			buildPhases = (
-				OBJ_197 /* Sources */,
-				OBJ_232 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SnapKit;
-			productName = SnapKit;
-			productReference = "SnapKit::SnapKit::Product" /* SnapKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"SnapKit::SwiftPMPackageDescription" /* SnapKitPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_234 /* Build configuration list for PBXNativeTarget "SnapKitPackageDescription" */;
-			buildPhases = (
-				OBJ_237 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SnapKitPackageDescription;
-			productName = SnapKitPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -468,8 +418,6 @@
 				"SPCommonLibrary::SwiftPMPackageDescription" /* SPCommonLibraryPackageDescription */,
 				"SPCommonLibrary::SPCommonLibraryPackageTests::ProductTarget" /* SPCommonLibraryPackageTests */,
 				"SPCommonLibrary::SPCommonLibraryTests" /* SPCommonLibraryTests */,
-				"SnapKit::SnapKit" /* SnapKit */,
-				"SnapKit::SwiftPMPackageDescription" /* SnapKitPackageDescription */,
 			);
 		};
 /* End PBXProject section */
@@ -481,8 +429,6 @@
 			files = (
 				9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */,
 				9EE39674233C4D50006AB687 /* SPCubeMap.c in Sources */,
-				9EE39664233B73AF006AB687 /* SPBundle.swift in Sources */,
-				9EE39682233C52B0006AB687 /* SPLibararyLanguage.swift in Sources */,
 				9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,14 +451,19 @@
 				OBJ_152 /* SPArray.swift in Sources */,
 				OBJ_153 /* SPAuthorization.swift in Sources */,
 				OBJ_154 /* SPBase.swift in Sources */,
+				9E2B96B5233C5EA2007EDAE7 /* SPLibararyLanguage.swift in Sources */,
+				9E2B96BD233C5ED7007EDAE7 /* SPClipImgVC.swift in Sources */,
 				OBJ_155 /* SPColor.swift in Sources */,
 				OBJ_156 /* SPDevice.swift in Sources */,
+				9E2B96BE233C5ED9007EDAE7 /* SPClipToolView.swift in Sources */,
+				9E2B96B6233C5EB8007EDAE7 /* SPBundle.swift in Sources */,
 				9E7B1BCD23053C6500146422 /* SPImagePickerVC.swift in Sources */,
 				9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */,
 				OBJ_157 /* SPImage.swift in Sources */,
 				OBJ_158 /* SPLanguages.swift in Sources */,
 				OBJ_159 /* SPNetWorkManager.swift in Sources */,
 				9E9D05E422FAD14F00D89C94 /* SPString.swift in Sources */,
+				9E2B96BF233C5EDD007EDAE7 /* SPClipView.swift in Sources */,
 				OBJ_160 /* SPRequestManager.swift in Sources */,
 				9E7B1BCF23053E4400146422 /* SPImagePickerListVC.swift in Sources */,
 				9E7B1BD123053E7B00146422 /* SPImagePickerListCollectionCell.swift in Sources */,
@@ -538,28 +489,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_197 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_237 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_166 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SnapKit::SnapKit" /* SnapKit */;
-			targetProxy = 9EDC278B22EAE88400F22529 /* PBXContainerItemProxy */;
-		};
 		OBJ_168 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Alamofire::Alamofire" /* Alamofire */;
@@ -574,11 +506,6 @@
 			isa = PBXTargetDependency;
 			target = "SPCommonLibrary::SPCommonLibrary" /* SPCommonLibrary */;
 			targetProxy = 9EDC278D22EAE88400F22529 /* PBXContainerItemProxy */;
-		};
-		OBJ_192 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SnapKit::SnapKit" /* SnapKit */;
-			targetProxy = 9EDC278E22EAE88400F22529 /* PBXContainerItemProxy */;
 		};
 		OBJ_193 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -682,7 +609,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SPCommonLibrary.xcodeproj/SPCommonLibrary_Info.plist;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -714,7 +641,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SPCommonLibrary.xcodeproj/SPCommonLibrary_Info.plist;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -822,86 +749,6 @@
 				TARGET_NAME = SPCommonLibraryTests;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_195 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SnapKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = SnapKit;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		OBJ_196 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SnapKit;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = SnapKit;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		OBJ_235 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_236 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -1014,29 +861,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_194 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_195 /* Debug */,
-				OBJ_196 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		OBJ_2 /* Build configuration list for PBXProject "SPCommonLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
 				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_234 /* Build configuration list for PBXNativeTarget "SnapKitPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_235 /* Debug */,
-				OBJ_236 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
