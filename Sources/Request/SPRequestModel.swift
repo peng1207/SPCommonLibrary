@@ -31,7 +31,7 @@ public enum SPReponseFormat {
     case string
 }
 
-public class SPRequestModel {
+open class SPRequestModel {
     /// 请求链接
     public var url : String?
     /// 请求参数
@@ -44,4 +44,9 @@ public class SPRequestModel {
     public var reponseFormat : SPReponseFormat = .json
     /// 超时时间
     public var timeOut : Int = 30
+    /// 调用取消请求
+    public var canceBlock : SPRequestCanceBlock?
+    public init() {
+        
+    }
 }

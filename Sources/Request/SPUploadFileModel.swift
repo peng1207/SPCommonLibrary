@@ -7,7 +7,8 @@
 //  上传图片的mode
 
 import Foundation
-public class SPUploadFileModel {
+
+open class SPUploadFileModel {
     /// 上传的路径
     public var url : String?
     /// 参数
@@ -17,6 +18,10 @@ public class SPUploadFileModel {
     /// 文件数组
     public var dataList : [SPUploadFileStruct]?
     public var isRequest : Bool = false
+    public var canceBlock : SPRequestCanceBlock? 
+    public init() {
+        
+    }
 }
 
 public struct SPUploadFileStruct {

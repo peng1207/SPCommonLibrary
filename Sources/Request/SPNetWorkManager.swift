@@ -85,13 +85,13 @@ public class SPNetWorkManager : NSObject {
     public class func sp_isWifi() -> Bool{
         return instance().reachManager.isReachableOnEthernetOrWiFi
     }
-    /// 是否移动网络
+    /// 当前网络是否移动网络
     ///
     /// - Returns: true 移动网 false 不是移动网络
     public class func sp_isWwan() -> Bool{
         return instance().reachManager.isReachableOnCellular
     }
-    /// 判断移动网络是否开启
+    /// 判断移动网络是否开启（系统是否开启移动网络）
     ///
     /// - Returns: true 开启移动网络 false 关闭移动网络
     public class func sp_isOpenWwan() -> Bool {

@@ -298,8 +298,7 @@ public func sp_appLogoImg()->UIImage?{
    
     return nil
 }
-
-
+/// 获取最顶层的控制器ViewController
 public func sp_topVC()->UIViewController?{
     var resultVC : UIViewController?
     resultVC = sp_nextTopVC(vc: UIApplication.shared.keyWindow?.rootViewController)

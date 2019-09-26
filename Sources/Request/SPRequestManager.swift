@@ -14,9 +14,11 @@ public let SPREQUESTFAILURL = "failure_url"
 /// 参数错误
 public let SPREQUESTFAILPARM = "failure_parm"
 /// 请求的回调
-internal typealias SPRequestComplete = (_ data : Any?, _ error : Error?,_ errorMsg : String?)->Void
-
-public class SPRequestManager {
+public typealias SPRequestComplete = (_ data : Any?, _ error : Error?,_ errorMsg : String?)->Void
+/// 请求取消
+public typealias SPRequestCanceBlock = ()->Void
+/// 请求管理
+open class SPRequestManager {
     
     //    /// 请求对象
     //    public static let netManager : Session = {
@@ -32,7 +34,7 @@ public class SPRequestManager {
     /// - Parameters:
     ///   - model: 请求参数
     ///   - complete: 回调
-    internal class func sp_request(model : SPRequestModel,complete : SPRequestComplete?){
+    public class func sp_request(model : SPRequestModel,complete : SPRequestComplete?){
         guard let urlString = model.url else {
             sp_dealComplete(data: nil, error: nil, errorMsg: SPREQUESTFAILURL, complete: complete)
             return
@@ -52,9 +54,15 @@ public class SPRequestManager {
         case .head:
             httpMethod = .head
         }
-       
+        
         let dataRequest = AF.request(url, method: httpMethod, parameters: model.parm, encoding: JSONEncoding.default, headers: nil)
         model.isRequest = true
+        model.canceBlock = {
+            if !dataRequest.isCancelled {
+                dataRequest.cancel()
+            }
+            model.isRequest = false
+        }
         switch model.reponseFormat {
         case .json:
           
@@ -101,7 +109,7 @@ public class SPRequestManager {
     /// - Parameters:
     ///   - model: 参数
     ///   - complete: 回调
-    internal class func sp_upload(model : SPUploadFileModel,complete : SPRequestComplete?){
+    public class func sp_upload(model : SPUploadFileModel,complete : SPRequestComplete?){
         guard let urlString = model.url else {
             sp_dealComplete(data: nil, error: nil, errorMsg: SPREQUESTFAILURL, complete: complete)
             return
@@ -115,6 +123,7 @@ public class SPRequestManager {
             return
         }
         model.isRequest = true
+        
         let uploadRequest = AF.upload(multipartFormData: { (formData) in
             if let parm : [String : Any] = model.parm {
                 for (key,value) in parm {
@@ -140,6 +149,12 @@ public class SPRequestManager {
         uploadRequest.responseData { (dataResponse) in
             model.isRequest = false
             sp_dealComplete(data: dataResponse.value , error: dataResponse.error,errorMsg: nil, complete: complete)
+        }
+        model.canceBlock = {
+            if !uploadRequest.isCancelled {
+                uploadRequest.cancel()
+            }
+            model.isRequest = false
         }
     }
     
