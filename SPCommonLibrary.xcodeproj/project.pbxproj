@@ -77,7 +77,6 @@
 		9E2B96B7233C5ED3007EDAE7 /* SPClipToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipToolView.swift; sourceTree = "<group>"; };
 		9E2B96B8233C5ED3007EDAE7 /* SPClipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipView.swift; sourceTree = "<group>"; };
 		9E2B96B9233C5ED3007EDAE7 /* SPClipImgVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipImgVC.swift; sourceTree = "<group>"; };
-		9E576CCC233C9BA7002061A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E58FB75233364E90023C79F /* SPRecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRecordingManager.swift; sourceTree = "<group>"; };
 		9E7B1BCC23053C6500146422 /* SPImagePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImagePickerVC.swift; sourceTree = "<group>"; };
 		9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImagePickerListVC.swift; sourceTree = "<group>"; };
@@ -248,7 +247,6 @@
 				9E05D6A622F3C9A200D9E907 /* SPCommonLibrary_Bridge_Header.h */,
 				9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */,
 				9E9D05E222FAD0DC00D89C94 /* SPString.swift */,
-				9E576CCC233C9BA7002061A2 /* Info.plist */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -429,7 +427,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Public/Info.plist";
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -463,7 +461,7 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/Public/Info.plist";
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

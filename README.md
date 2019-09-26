@@ -14,7 +14,7 @@
     pod 'SPCommonLibrary/Recording'
 
 # swift package 管理
-      .package(url: "https://github.com/peng1207/SPCommonLibrary.git", from: "0.0.1.27")
+      .package(url: "https://github.com/peng1207/SPCommonLibrary.git", from: "0.0.1.28")
 
 # 用pod管理
     source 'https://github.com/peng1207/huangshupengSpecs.git'
