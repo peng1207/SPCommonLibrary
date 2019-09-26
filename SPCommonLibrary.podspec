@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "SPCommonLibrary"
-s.version      = "0.0.1.23"
+s.version      = "0.0.1.24"
 s.summary      = "公共库 提供基础的功能，对第三方请求的封装功能，增加分享功能"
 
 # This description is used to generate tags and improve search results.
@@ -102,7 +102,7 @@ end
 # 请求功能 监听网络状态
 s.subspec "Request" do |ss|
     ss.source_files =  "Sources/Request/**/*"
-    ss.dependency "Alamofire","~> 5.0.0-beta.6"
+    ss.dependency "Alamofire","~> 4.9.0"
     ss.dependency "SPCommonLibrary/Public"
 end
 # 分享功能

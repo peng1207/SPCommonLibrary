@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */; };
-		9E05D6B922F43F4300D9E907 /* SPCubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D69F22F3C80B00D9E907 /* SPCubeMap.c */; };
 		9E05D6BC22F4402700D9E907 /* SPClipImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */; };
 		9E05D6D022F7D65B00D9E907 /* SPClipToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */; };
 		9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58FB75233364E90023C79F /* SPRecordingManager.swift */; };
@@ -36,38 +35,10 @@
 		9EDCFA4522EF34DE0058F291 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC27A222EBEA8C00F22529 /* SPView.swift */; };
 		9EDCFA4622EF34DE0058F291 /* SPQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */; };
 		9EDCFA4722EF34F10058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
-		OBJ_109 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* AFError.swift */; };
-		OBJ_110 /* AFResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* AFResult.swift */; };
-		OBJ_111 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Alamofire.swift */; };
-		OBJ_112 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* AlamofireExtended.swift */; };
-		OBJ_113 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* CachedResponseHandler.swift */; };
-		OBJ_114 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* DispatchQueue+Alamofire.swift */; };
-		OBJ_115 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* EventMonitor.swift */; };
-		OBJ_116 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* HTTPHeaders.swift */; };
-		OBJ_117 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* HTTPMethod.swift */; };
-		OBJ_118 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* MultipartFormData.swift */; };
-		OBJ_119 /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* MultipartUpload.swift */; };
-		OBJ_120 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* NetworkReachabilityManager.swift */; };
-		OBJ_121 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Notifications.swift */; };
-		OBJ_122 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* OperationQueue+Alamofire.swift */; };
-		OBJ_123 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* ParameterEncoder.swift */; };
-		OBJ_124 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* ParameterEncoding.swift */; };
-		OBJ_125 /* Protector.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* Protector.swift */; };
-		OBJ_126 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* RedirectHandler.swift */; };
-		OBJ_127 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* Request.swift */; };
-		OBJ_128 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* RequestInterceptor.swift */; };
-		OBJ_129 /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* RequestTaskMap.swift */; };
-		OBJ_130 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* Response.swift */; };
-		OBJ_131 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* ResponseSerialization.swift */; };
-		OBJ_132 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* RetryPolicy.swift */; };
-		OBJ_133 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* ServerTrustEvaluation.swift */; };
-		OBJ_134 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* Session.swift */; };
-		OBJ_135 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* SessionDelegate.swift */; };
-		OBJ_136 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* URLConvertible+URLRequestConvertible.swift */; };
-		OBJ_137 /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* URLRequest+Alamofire.swift */; };
-		OBJ_138 /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_93 /* URLSessionConfiguration+Alamofire.swift */; };
-		OBJ_139 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* Validation.swift */; };
-		OBJ_146 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Package.swift */; };
+		9EE39664233B73AF006AB687 /* SPBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39663233B73AF006AB687 /* SPBundle.swift */; };
+		9EE39674233C4D50006AB687 /* SPCubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39672233C4D50006AB687 /* SPCubeMap.c */; };
+		9EE3967A233C4E68006AB687 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9EE39679233C4E68006AB687 /* SnapKit */; };
+		9EE3967D233C4E84006AB687 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9EE3967C233C4E84006AB687 /* Alamofire */; };
 		OBJ_152 /* SPArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* SPArray.swift */; };
 		OBJ_153 /* SPAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* SPAuthorization.swift */; };
 		OBJ_154 /* SPBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SPBase.swift */; };
@@ -87,41 +58,6 @@
 		OBJ_188 /* SPCommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SPCommonLibrary::SPCommonLibrary::Product" /* SPCommonLibrary.framework */; };
 		OBJ_189 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SnapKit::SnapKit::Product" /* SnapKit.framework */; };
 		OBJ_190 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_198 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Constraint.swift */; };
-		OBJ_199 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* ConstraintAttributes.swift */; };
-		OBJ_200 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ConstraintConfig.swift */; };
-		OBJ_201 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* ConstraintConstantTarget.swift */; };
-		OBJ_202 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ConstraintDSL.swift */; };
-		OBJ_203 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ConstraintDescription.swift */; };
-		OBJ_204 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* ConstraintInsetTarget.swift */; };
-		OBJ_205 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* ConstraintInsets.swift */; };
-		OBJ_206 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ConstraintItem.swift */; };
-		OBJ_207 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ConstraintLayoutGuide+Extensions.swift */; };
-		OBJ_208 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ConstraintLayoutGuide.swift */; };
-		OBJ_209 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ConstraintLayoutGuideDSL.swift */; };
-		OBJ_210 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* ConstraintLayoutSupport.swift */; };
-		OBJ_211 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* ConstraintLayoutSupportDSL.swift */; };
-		OBJ_212 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ConstraintMaker.swift */; };
-		OBJ_213 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* ConstraintMakerEditable.swift */; };
-		OBJ_214 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ConstraintMakerExtendable.swift */; };
-		OBJ_215 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ConstraintMakerFinalizable.swift */; };
-		OBJ_216 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* ConstraintMakerPriortizable.swift */; };
-		OBJ_217 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* ConstraintMakerRelatable.swift */; };
-		OBJ_218 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* ConstraintMultiplierTarget.swift */; };
-		OBJ_219 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* ConstraintOffsetTarget.swift */; };
-		OBJ_220 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ConstraintPriority.swift */; };
-		OBJ_221 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* ConstraintPriorityTarget.swift */; };
-		OBJ_222 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ConstraintRelatableTarget.swift */; };
-		OBJ_223 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ConstraintRelation.swift */; };
-		OBJ_224 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ConstraintView+Extensions.swift */; };
-		OBJ_225 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* ConstraintView.swift */; };
-		OBJ_226 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* ConstraintViewDSL.swift */; };
-		OBJ_227 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* Debugging.swift */; };
-		OBJ_228 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* LayoutConstraint.swift */; };
-		OBJ_229 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* LayoutConstraintItem.swift */; };
-		OBJ_230 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Typealiases.swift */; };
-		OBJ_231 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* UILayoutSupport+Extensions.swift */; };
-		OBJ_238 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,8 +106,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9E05D69F22F3C80B00D9E907 /* SPCubeMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SPCubeMap.c; sourceTree = "<group>"; };
-		9E05D6A022F3C80B00D9E907 /* SPCubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCubeMap.h; sourceTree = "<group>"; };
 		9E05D6A622F3C9A200D9E907 /* SPCommonLibrary_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCommonLibrary_Bridge_Header.h; sourceTree = "<group>"; };
 		9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSampleBuffer.swift; sourceTree = "<group>"; };
 		9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClipImgVC.swift; sourceTree = "<group>"; };
@@ -187,6 +121,9 @@
 		9EDC27A222EBEA8C00F22529 /* SPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPView.swift; sourceTree = "<group>"; };
 		9EDCFA4122EEED1B0058F291 /* SPShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPShare.swift; sourceTree = "<group>"; };
 		9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPQRCode.swift; sourceTree = "<group>"; };
+		9EE39663233B73AF006AB687 /* SPBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBundle.swift; sourceTree = "<group>"; };
+		9EE39672233C4D50006AB687 /* SPCubeMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SPCubeMap.c; sourceTree = "<group>"; };
+		9EE39673233C4D50006AB687 /* SPCubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCubeMap.h; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* SPAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAuthorization.swift; sourceTree = "<group>"; };
 		OBJ_100 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
@@ -204,77 +141,10 @@
 		OBJ_20 /* SPUploadFileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPUploadFileModel.swift; sourceTree = "<group>"; };
 		OBJ_23 /* SPCommonLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPCommonLibraryTests.swift; sourceTree = "<group>"; };
 		OBJ_24 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
-		OBJ_27 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/huangshupeng/Documents/git/SPCommonLibrary/.build/checkouts/SnapKit/Package.swift; sourceTree = "<group>"; };
-		OBJ_28 /* Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
-		OBJ_29 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
-		OBJ_30 /* ConstraintConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintConfig.swift; sourceTree = "<group>"; };
-		OBJ_31 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		OBJ_32 /* ConstraintDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintDSL.swift; sourceTree = "<group>"; };
-		OBJ_33 /* ConstraintDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
-		OBJ_34 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintInsetTarget.swift; sourceTree = "<group>"; };
-		OBJ_35 /* ConstraintInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintInsets.swift; sourceTree = "<group>"; };
-		OBJ_36 /* ConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
-		OBJ_37 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_38 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		OBJ_39 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		OBJ_40 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
-		OBJ_41 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		OBJ_42 /* ConstraintMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
-		OBJ_43 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		OBJ_44 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		OBJ_45 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
-		OBJ_46 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		OBJ_47 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		OBJ_48 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		OBJ_49 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		OBJ_50 /* ConstraintPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintPriority.swift; sourceTree = "<group>"; };
-		OBJ_51 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		OBJ_52 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		OBJ_53 /* ConstraintRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
-		OBJ_54 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_55 /* ConstraintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
-		OBJ_56 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		OBJ_57 /* Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
-		OBJ_58 /* LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
-		OBJ_59 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
-		OBJ_61 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_63 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/huangshupeng/Documents/git/SPCommonLibrary/.build/checkouts/Alamofire/Package.swift; sourceTree = "<group>"; };
-		OBJ_64 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
-		OBJ_65 /* AFResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFResult.swift; sourceTree = "<group>"; };
-		OBJ_66 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		OBJ_67 /* AlamofireExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtended.swift; sourceTree = "<group>"; };
-		OBJ_68 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedResponseHandler.swift; sourceTree = "<group>"; };
-		OBJ_69 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_70 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
-		OBJ_71 /* HTTPHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaders.swift; sourceTree = "<group>"; };
-		OBJ_72 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		OBJ_73 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
-		OBJ_74 /* MultipartUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartUpload.swift; sourceTree = "<group>"; };
-		OBJ_75 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		OBJ_76 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		OBJ_77 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_78 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
-		OBJ_79 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		OBJ_80 /* Protector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protector.swift; sourceTree = "<group>"; };
-		OBJ_81 /* RedirectHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedirectHandler.swift; sourceTree = "<group>"; };
-		OBJ_82 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		OBJ_83 /* RequestInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInterceptor.swift; sourceTree = "<group>"; };
-		OBJ_84 /* RequestTaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTaskMap.swift; sourceTree = "<group>"; };
-		OBJ_85 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		OBJ_86 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		OBJ_87 /* RetryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPolicy.swift; sourceTree = "<group>"; };
-		OBJ_88 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustEvaluation.swift; sourceTree = "<group>"; };
-		OBJ_89 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		OBJ_9 /* SPArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPArray.swift; sourceTree = "<group>"; };
-		OBJ_90 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
-		OBJ_91 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		OBJ_92 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_93 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_94 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		"SPCommonLibrary::SPCommonLibrary::Product" /* SPCommonLibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SPCommonLibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"SPCommonLibrary::SPCommonLibraryTests::Product" /* SPCommonLibraryTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SPCommonLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"SPCommonLibrary::SPCommonLibraryTests::Product" /* SPCommonLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = SPCommonLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SnapKit::SnapKit::Product" /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -290,6 +160,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				9EE3967A233C4E68006AB687 /* SnapKit in Frameworks */,
+				9EE3967D233C4E84006AB687 /* Alamofire in Frameworks */,
 				OBJ_164 /* SnapKit.framework in Frameworks */,
 				OBJ_165 /* Alamofire.framework in Frameworks */,
 			);
@@ -340,6 +212,7 @@
 				9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */,
 				9E7B1BD023053E7B00146422 /* SPImagePickerListCollectionCell.swift */,
 				9E7B1BD223054A3600146422 /* SPAlbumVC.swift */,
+				9EE39663233B73AF006AB687 /* SPBundle.swift */,
 			);
 			path = ImagePicker;
 			sourceTree = "<group>";
@@ -389,65 +262,12 @@
 			path = Tests/SPCommonLibraryTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_25 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_26 /* SnapKit 5.0.0 */,
-				OBJ_62 /* Alamofire 5.0.0-beta.6 */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_26 /* SnapKit 5.0.0 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_27 /* Package.swift */,
-				OBJ_28 /* Constraint.swift */,
-				OBJ_29 /* ConstraintAttributes.swift */,
-				OBJ_30 /* ConstraintConfig.swift */,
-				OBJ_31 /* ConstraintConstantTarget.swift */,
-				OBJ_32 /* ConstraintDSL.swift */,
-				OBJ_33 /* ConstraintDescription.swift */,
-				OBJ_34 /* ConstraintInsetTarget.swift */,
-				OBJ_35 /* ConstraintInsets.swift */,
-				OBJ_36 /* ConstraintItem.swift */,
-				OBJ_37 /* ConstraintLayoutGuide+Extensions.swift */,
-				OBJ_38 /* ConstraintLayoutGuide.swift */,
-				OBJ_39 /* ConstraintLayoutGuideDSL.swift */,
-				OBJ_40 /* ConstraintLayoutSupport.swift */,
-				OBJ_41 /* ConstraintLayoutSupportDSL.swift */,
-				OBJ_42 /* ConstraintMaker.swift */,
-				OBJ_43 /* ConstraintMakerEditable.swift */,
-				OBJ_44 /* ConstraintMakerExtendable.swift */,
-				OBJ_45 /* ConstraintMakerFinalizable.swift */,
-				OBJ_46 /* ConstraintMakerPriortizable.swift */,
-				OBJ_47 /* ConstraintMakerRelatable.swift */,
-				OBJ_48 /* ConstraintMultiplierTarget.swift */,
-				OBJ_49 /* ConstraintOffsetTarget.swift */,
-				OBJ_50 /* ConstraintPriority.swift */,
-				OBJ_51 /* ConstraintPriorityTarget.swift */,
-				OBJ_52 /* ConstraintRelatableTarget.swift */,
-				OBJ_53 /* ConstraintRelation.swift */,
-				OBJ_54 /* ConstraintView+Extensions.swift */,
-				OBJ_55 /* ConstraintView.swift */,
-				OBJ_56 /* ConstraintViewDSL.swift */,
-				OBJ_57 /* Debugging.swift */,
-				OBJ_58 /* LayoutConstraint.swift */,
-				OBJ_59 /* LayoutConstraintItem.swift */,
-				OBJ_60 /* Typealiases.swift */,
-				OBJ_61 /* UILayoutSupport+Extensions.swift */,
-			);
-			name = "SnapKit 5.0.0";
-			path = .build/checkouts/SnapKit/Source;
-			sourceTree = SOURCE_ROOT;
-		};
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_21 /* Tests */,
-				OBJ_25 /* Dependencies */,
 				OBJ_95 /* Products */,
 				OBJ_100 /* Pods */,
 				OBJ_101 /* SPCommonLibrary.xcworkspace */,
@@ -455,46 +275,6 @@
 				OBJ_103 /* README.md */,
 			);
 			sourceTree = "<group>";
-		};
-		OBJ_62 /* Alamofire 5.0.0-beta.6 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_63 /* Package.swift */,
-				OBJ_64 /* AFError.swift */,
-				OBJ_65 /* AFResult.swift */,
-				OBJ_66 /* Alamofire.swift */,
-				OBJ_67 /* AlamofireExtended.swift */,
-				OBJ_68 /* CachedResponseHandler.swift */,
-				OBJ_69 /* DispatchQueue+Alamofire.swift */,
-				OBJ_70 /* EventMonitor.swift */,
-				OBJ_71 /* HTTPHeaders.swift */,
-				OBJ_72 /* HTTPMethod.swift */,
-				OBJ_73 /* MultipartFormData.swift */,
-				OBJ_74 /* MultipartUpload.swift */,
-				OBJ_75 /* NetworkReachabilityManager.swift */,
-				OBJ_76 /* Notifications.swift */,
-				OBJ_77 /* OperationQueue+Alamofire.swift */,
-				OBJ_78 /* ParameterEncoder.swift */,
-				OBJ_79 /* ParameterEncoding.swift */,
-				OBJ_80 /* Protector.swift */,
-				OBJ_81 /* RedirectHandler.swift */,
-				OBJ_82 /* Request.swift */,
-				OBJ_83 /* RequestInterceptor.swift */,
-				OBJ_84 /* RequestTaskMap.swift */,
-				OBJ_85 /* Response.swift */,
-				OBJ_86 /* ResponseSerialization.swift */,
-				OBJ_87 /* RetryPolicy.swift */,
-				OBJ_88 /* ServerTrustEvaluation.swift */,
-				OBJ_89 /* Session.swift */,
-				OBJ_90 /* SessionDelegate.swift */,
-				OBJ_91 /* URLConvertible+URLRequestConvertible.swift */,
-				OBJ_92 /* URLRequest+Alamofire.swift */,
-				OBJ_93 /* URLSessionConfiguration+Alamofire.swift */,
-				OBJ_94 /* Validation.swift */,
-			);
-			name = "Alamofire 5.0.0-beta.6";
-			path = .build/checkouts/Alamofire/Source;
-			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
@@ -513,8 +293,8 @@
 		OBJ_8 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				9E05D69F22F3C80B00D9E907 /* SPCubeMap.c */,
-				9E05D6A022F3C80B00D9E907 /* SPCubeMap.h */,
+				9EE39672233C4D50006AB687 /* SPCubeMap.c */,
+				9EE39673233C4D50006AB687 /* SPCubeMap.h */,
 				OBJ_9 /* SPArray.swift */,
 				OBJ_10 /* SPAuthorization.swift */,
 				OBJ_11 /* SPBase.swift */,
@@ -592,6 +372,8 @@
 			);
 			name = SPCommonLibrary;
 			packageProductDependencies = (
+				9EE39679233C4E68006AB687 /* SnapKit */,
+				9EE3967C233C4E84006AB687 /* Alamofire */,
 			);
 			productName = SPCommonLibrary;
 			productReference = "SPCommonLibrary::SPCommonLibrary::Product" /* SPCommonLibrary.framework */;
@@ -672,7 +454,7 @@
 				ORGANIZATIONNAME = huangshupeng;
 				TargetAttributes = {
 					"Alamofire::Alamofire" = {
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -687,6 +469,8 @@
 			);
 			mainGroup = OBJ_5;
 			packageReferences = (
+				9EE39678233C4E68006AB687 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				9EE3967B233C4E84006AB687 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = OBJ_95 /* Products */;
 			projectDirPath = "";
@@ -709,39 +493,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_109 /* AFError.swift in Sources */,
-				OBJ_110 /* AFResult.swift in Sources */,
-				OBJ_111 /* Alamofire.swift in Sources */,
-				OBJ_112 /* AlamofireExtended.swift in Sources */,
-				OBJ_113 /* CachedResponseHandler.swift in Sources */,
-				OBJ_114 /* DispatchQueue+Alamofire.swift in Sources */,
-				OBJ_115 /* EventMonitor.swift in Sources */,
 				9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */,
-				OBJ_116 /* HTTPHeaders.swift in Sources */,
-				OBJ_117 /* HTTPMethod.swift in Sources */,
-				OBJ_118 /* MultipartFormData.swift in Sources */,
-				OBJ_119 /* MultipartUpload.swift in Sources */,
-				OBJ_120 /* NetworkReachabilityManager.swift in Sources */,
-				OBJ_121 /* Notifications.swift in Sources */,
-				OBJ_122 /* OperationQueue+Alamofire.swift in Sources */,
-				OBJ_123 /* ParameterEncoder.swift in Sources */,
-				OBJ_124 /* ParameterEncoding.swift in Sources */,
-				OBJ_125 /* Protector.swift in Sources */,
-				OBJ_126 /* RedirectHandler.swift in Sources */,
-				OBJ_127 /* Request.swift in Sources */,
-				OBJ_128 /* RequestInterceptor.swift in Sources */,
-				OBJ_129 /* RequestTaskMap.swift in Sources */,
+				9EE39674233C4D50006AB687 /* SPCubeMap.c in Sources */,
+				9EE39664233B73AF006AB687 /* SPBundle.swift in Sources */,
 				9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */,
-				OBJ_130 /* Response.swift in Sources */,
-				OBJ_131 /* ResponseSerialization.swift in Sources */,
-				OBJ_132 /* RetryPolicy.swift in Sources */,
-				OBJ_133 /* ServerTrustEvaluation.swift in Sources */,
-				OBJ_134 /* Session.swift in Sources */,
-				OBJ_135 /* SessionDelegate.swift in Sources */,
-				OBJ_136 /* URLConvertible+URLRequestConvertible.swift in Sources */,
-				OBJ_137 /* URLRequest+Alamofire.swift in Sources */,
-				OBJ_138 /* URLSessionConfiguration+Alamofire.swift in Sources */,
-				OBJ_139 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -749,7 +504,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_146 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,7 +529,6 @@
 				OBJ_158 /* SPLanguages.swift in Sources */,
 				OBJ_159 /* SPNetWorkManager.swift in Sources */,
 				9E9D05E422FAD14F00D89C94 /* SPString.swift in Sources */,
-				9E05D6B922F43F4300D9E907 /* SPCubeMap.c in Sources */,
 				OBJ_160 /* SPRequestManager.swift in Sources */,
 				9E7B1BCF23053E4400146422 /* SPImagePickerListVC.swift in Sources */,
 				9E7B1BD123053E7B00146422 /* SPImagePickerListCollectionCell.swift in Sources */,
@@ -805,40 +558,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_198 /* Constraint.swift in Sources */,
-				OBJ_199 /* ConstraintAttributes.swift in Sources */,
-				OBJ_200 /* ConstraintConfig.swift in Sources */,
-				OBJ_201 /* ConstraintConstantTarget.swift in Sources */,
-				OBJ_202 /* ConstraintDSL.swift in Sources */,
-				OBJ_203 /* ConstraintDescription.swift in Sources */,
-				OBJ_204 /* ConstraintInsetTarget.swift in Sources */,
-				OBJ_205 /* ConstraintInsets.swift in Sources */,
-				OBJ_206 /* ConstraintItem.swift in Sources */,
-				OBJ_207 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
-				OBJ_208 /* ConstraintLayoutGuide.swift in Sources */,
-				OBJ_209 /* ConstraintLayoutGuideDSL.swift in Sources */,
-				OBJ_210 /* ConstraintLayoutSupport.swift in Sources */,
-				OBJ_211 /* ConstraintLayoutSupportDSL.swift in Sources */,
-				OBJ_212 /* ConstraintMaker.swift in Sources */,
-				OBJ_213 /* ConstraintMakerEditable.swift in Sources */,
-				OBJ_214 /* ConstraintMakerExtendable.swift in Sources */,
-				OBJ_215 /* ConstraintMakerFinalizable.swift in Sources */,
-				OBJ_216 /* ConstraintMakerPriortizable.swift in Sources */,
-				OBJ_217 /* ConstraintMakerRelatable.swift in Sources */,
-				OBJ_218 /* ConstraintMultiplierTarget.swift in Sources */,
-				OBJ_219 /* ConstraintOffsetTarget.swift in Sources */,
-				OBJ_220 /* ConstraintPriority.swift in Sources */,
-				OBJ_221 /* ConstraintPriorityTarget.swift in Sources */,
-				OBJ_222 /* ConstraintRelatableTarget.swift in Sources */,
-				OBJ_223 /* ConstraintRelation.swift in Sources */,
-				OBJ_224 /* ConstraintView+Extensions.swift in Sources */,
-				OBJ_225 /* ConstraintView.swift in Sources */,
-				OBJ_226 /* ConstraintViewDSL.swift in Sources */,
-				OBJ_227 /* Debugging.swift in Sources */,
-				OBJ_228 /* LayoutConstraint.swift in Sources */,
-				OBJ_229 /* LayoutConstraintItem.swift in Sources */,
-				OBJ_230 /* Typealiases.swift in Sources */,
-				OBJ_231 /* UILayoutSupport+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -846,7 +565,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_238 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -897,9 +615,12 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SPCommonLibrary.xcodeproj/Alamofire_Info.plist;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -928,9 +649,12 @@
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SPCommonLibrary.xcodeproj/Alamofire_Info.plist;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -976,7 +700,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SPCommonLibrary.xcodeproj/SPCommonLibrary_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1005,7 +732,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SPCommonLibrary.xcodeproj/SPCommonLibrary_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1065,7 +795,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SPCommonLibrary.xcodeproj/SPCommonLibraryTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1090,7 +824,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SPCommonLibrary.xcodeproj/SPCommonLibraryTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1114,7 +852,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1142,7 +883,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1223,7 +967,8 @@
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -1313,6 +1058,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9EE39678233C4E68006AB687 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		9EE3967B233C4E84006AB687 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9EE39679233C4E68006AB687 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EE39678233C4E68006AB687 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		9EE3967C233C4E84006AB687 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9EE3967B233C4E84006AB687 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = OBJ_1 /* Project object */;
 }
