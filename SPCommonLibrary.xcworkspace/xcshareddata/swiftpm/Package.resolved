@@ -5,9 +5,9 @@
         "package": "Alamofire",
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
-          "branch": null,
-          "revision": "ce5be6fbc6f51414c49f56fc8e2b7c99253d9f8e",
-          "version": "4.9.0"
+          "branch": "5.0.0-rc.2",
+          "revision": "c1d14588e5558a3669fd03510d135d88c5109069",
+          "version": null
         }
       },
       {

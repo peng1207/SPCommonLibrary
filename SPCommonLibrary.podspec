@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "SPCommonLibrary"
-s.version      = "0.0.1.24"
+s.version      = "0.0.1.25"
 s.summary      = "公共库 提供基础的功能，对第三方请求的封装功能，增加分享功能"
 
 # This description is used to generate tags and improve search results.
@@ -102,21 +102,21 @@ end
 # 请求功能 监听网络状态
 s.subspec "Request" do |ss|
     ss.source_files =  "Sources/Request/**/*"
-    ss.dependency "Alamofire","~> 4.9.0"
+    ss.dependency "Alamofire","~> 5.0.0-beta.6"
     ss.dependency "SPCommonLibrary/Public"
 end
 # 分享功能
 s.subspec "Share" do  |ss|
     ss.source_files = "Sources/Share/*.swift"
 end
-# 对图片裁剪功能
-s.subspec "Clip" do |ss|
-    ss.source_files = "Sources/Clip/**/*"
-    ss.resources = "Sources/Resource/*.bundle"
-    ss.dependency "SPCommonLibrary/Public"
-end
+## 对图片裁剪功能
+#s.subspec "Clip" do |ss|
+#    ss.source_files = "Sources/Clip/**/*"
+#    ss.resources = "Sources/Resource/*.bundle"
+#    ss.dependency "SPCommonLibrary/Public"
+#end
 # 选择图片功能
-s.subspec "ImagePicker" do |ss|
+s.subspec "ImageManager" do |ss|
     ss.source_files = "Sources/ImagePicker/**/*"
     ss.dependency "SPCommonLibrary/Public"
     ss.resources = "Sources/Resource/*.bundle"

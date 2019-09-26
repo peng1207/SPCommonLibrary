@@ -42,7 +42,7 @@ class SPImagePickerListVC: UIViewController {
     /// 创建UI
     fileprivate func sp_setupUI() {
         self.view.backgroundColor = UIColor.white
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: SPLanguageChange.sp_library(key: "sdk_done"), style: UIBarButtonItem.Style.done, target: self, action: #selector(sp_clickDone))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: SPLibararyLanguage.sp_library(key: "sdk_done"), style: UIBarButtonItem.Style.done, target: self, action: #selector(sp_clickDone))
         guard let item = self.albumItem else {
             return
         }
@@ -150,8 +150,8 @@ extension SPImagePickerListVC {
     fileprivate func sp_dealSelect(asset : PHAsset){
         if self.maxSelectNum > 0 , sp_count(array: self.selectArray) == self.maxSelectNum , self.selectArray.contains(asset) == false{
              // 选择的图片的等于最大的数量
-            let alertController = UIAlertController(title: SPLanguageChange.sp_library(key: "sdk_tips"), message: SPLanguageChange.sp_library(key: "sdk_max_num"), preferredStyle: UIAlertController.Style.alert)
-            alertController.addAction(UIAlertAction(title: SPLanguageChange.sp_library(key: "sdk_cance"), style: UIAlertAction.Style.default, handler: nil))
+            let alertController = UIAlertController(title: SPLibararyLanguage.sp_library(key: "sdk_tips"), message: SPLibararyLanguage.sp_library(key: "sdk_max_num"), preferredStyle: UIAlertController.Style.alert)
+            alertController.addAction(UIAlertAction(title: SPLibararyLanguage.sp_library(key: "sdk_cance"), style: UIAlertAction.Style.default, handler: nil))
             self.present(alertController, animated: true, completion: nil)
             return
         }

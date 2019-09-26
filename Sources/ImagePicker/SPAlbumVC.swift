@@ -50,9 +50,9 @@ class SPAlbumVC: UIViewController{
     }
     /// 创建UI
     fileprivate func sp_setupUI() {
-        self.navigationItem.title = SPLanguageChange.sp_library(key: "sdk_album")
+        self.navigationItem.title = SPLibararyLanguage.sp_library(key: "sdk_album")
         self.view.backgroundColor = UIColor.white
-         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: SPLanguageChange.sp_library(key: "sdk_cance"), style: UIBarButtonItem.Style.done, target: self, action: #selector(sp_clickCance))
+         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: SPLibararyLanguage.sp_library(key: "sdk_cance"), style: UIBarButtonItem.Style.done, target: self, action: #selector(sp_clickCance))
         self.tableView = UITableView(frame: CGRect.zero, style: UITableView.Style.plain)
         self.tableView.delegate = self
         self.tableView.dataSource = self

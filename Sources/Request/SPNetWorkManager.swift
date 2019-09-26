@@ -15,7 +15,7 @@ public let SP_NETWORK_NOTIFICATION = "SP_NETWORK_NOTIFICATION"
 public class SPNetWorkManager : NSObject {
     
     private static let netManager = SPNetWorkManager()
-    private var netWorkStatus :  NetworkReachabilityManager.NetworkReachabilityStatus = .reachable(NetworkReachabilityManager.ConnectionType.ethernetOrWiFi)
+    private var netWorkStatus :  NetworkReachabilityManager.NetworkReachabilityStatus = .reachable(NetworkReachabilityManager.NetworkReachabilityStatus.ConnectionType.ethernetOrWiFi)
     private var netWorkOldStatus : NetworkReachabilityManager.NetworkReachabilityStatus = .unknown
     private var wwanStatus : CTCellularDataRestrictedState = CTCellularDataRestrictedState.restrictedStateUnknown
     private var reachManager : NetworkReachabilityManager!
@@ -24,15 +24,19 @@ public class SPNetWorkManager : NSObject {
     }
     /// 开启网络监听
     private func sp_start(){
+        
         let manager = NetworkReachabilityManager(host: "www.apple.com")
-        manager?.listener = { status in
-            self.netWorkOldStatus = self.netWorkStatus
-            self.netWorkStatus = status
-            
-            self.sp_sendNetWorckChange()
-        }
+      
+        manager?.startListening(onUpdatePerforming: { [weak self](status) in
+            if let s = self?.netWorkStatus{
+                self?.netWorkOldStatus = s
+            }
+            self?.netWorkStatus = status
+            self?.sp_sendNetWorckChange()
+        })
+      
         // 开始监听网络状态变化
-        manager?.startListening()
+      
         self.reachManager = manager
     }
     /// 开启移动网络监听
@@ -85,7 +89,7 @@ public class SPNetWorkManager : NSObject {
     ///
     /// - Returns: true 移动网 false 不是移动网络
     public class func sp_isWwan() -> Bool{
-        return instance().reachManager.isReachableOnWWAN
+        return instance().reachManager.isReachableOnCellular
     }
     /// 判断移动网络是否开启
     ///

@@ -22,14 +22,12 @@
 
 /* Begin PBXBuildFile section */
 		9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */; };
-		9E05D6BC22F4402700D9E907 /* SPClipImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */; };
-		9E05D6D022F7D65B00D9E907 /* SPClipToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */; };
+		9E2B96B4233C5B5E007EDAE7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9E2B96B3233C5B5E007EDAE7 /* Alamofire */; };
 		9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58FB75233364E90023C79F /* SPRecordingManager.swift */; };
 		9E7B1BCD23053C6500146422 /* SPImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BCC23053C6500146422 /* SPImagePickerVC.swift */; };
 		9E7B1BCF23053E4400146422 /* SPImagePickerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */; };
 		9E7B1BD123053E7B00146422 /* SPImagePickerListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BD023053E7B00146422 /* SPImagePickerListCollectionCell.swift */; };
 		9E7B1BD323054A3600146422 /* SPAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BD223054A3600146422 /* SPAlbumVC.swift */; };
-		9E9D05C222F7FAE400D89C94 /* SPClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6D122F7E09F00D9E907 /* SPClipView.swift */; };
 		9E9D05E422FAD14F00D89C94 /* SPString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9D05E222FAD0DC00D89C94 /* SPString.swift */; };
 		9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
 		9EDCFA4522EF34DE0058F291 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC27A222EBEA8C00F22529 /* SPView.swift */; };
@@ -38,7 +36,7 @@
 		9EE39664233B73AF006AB687 /* SPBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39663233B73AF006AB687 /* SPBundle.swift */; };
 		9EE39674233C4D50006AB687 /* SPCubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39672233C4D50006AB687 /* SPCubeMap.c */; };
 		9EE3967A233C4E68006AB687 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9EE39679233C4E68006AB687 /* SnapKit */; };
-		9EE3967D233C4E84006AB687 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9EE3967C233C4E84006AB687 /* Alamofire */; };
+		9EE39682233C52B0006AB687 /* SPLibararyLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39681233C52B0006AB687 /* SPLibararyLanguage.swift */; };
 		OBJ_152 /* SPArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* SPArray.swift */; };
 		OBJ_153 /* SPAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* SPAuthorization.swift */; };
 		OBJ_154 /* SPBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SPBase.swift */; };
@@ -108,9 +106,6 @@
 /* Begin PBXFileReference section */
 		9E05D6A622F3C9A200D9E907 /* SPCommonLibrary_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCommonLibrary_Bridge_Header.h; sourceTree = "<group>"; };
 		9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSampleBuffer.swift; sourceTree = "<group>"; };
-		9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClipImgVC.swift; sourceTree = "<group>"; };
-		9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipToolView.swift; sourceTree = "<group>"; };
-		9E05D6D122F7E09F00D9E907 /* SPClipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPClipView.swift; sourceTree = "<group>"; };
 		9E58FB75233364E90023C79F /* SPRecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPRecordingManager.swift; sourceTree = "<group>"; };
 		9E7B1BCC23053C6500146422 /* SPImagePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImagePickerVC.swift; sourceTree = "<group>"; };
 		9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPImagePickerListVC.swift; sourceTree = "<group>"; };
@@ -124,6 +119,7 @@
 		9EE39663233B73AF006AB687 /* SPBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPBundle.swift; sourceTree = "<group>"; };
 		9EE39672233C4D50006AB687 /* SPCubeMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SPCubeMap.c; sourceTree = "<group>"; };
 		9EE39673233C4D50006AB687 /* SPCubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCubeMap.h; sourceTree = "<group>"; };
+		9EE39681233C52B0006AB687 /* SPLibararyLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPLibararyLanguage.swift; sourceTree = "<group>"; };
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* SPAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAuthorization.swift; sourceTree = "<group>"; };
 		OBJ_100 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
@@ -161,7 +157,7 @@
 			buildActionMask = 0;
 			files = (
 				9EE3967A233C4E68006AB687 /* SnapKit in Frameworks */,
-				9EE3967D233C4E84006AB687 /* Alamofire in Frameworks */,
+				9E2B96B4233C5B5E007EDAE7 /* Alamofire in Frameworks */,
 				OBJ_164 /* SnapKit.framework in Frameworks */,
 				OBJ_165 /* Alamofire.framework in Frameworks */,
 			);
@@ -187,16 +183,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9E05D6BA22F4401900D9E907 /* Clip */ = {
-			isa = PBXGroup;
-			children = (
-				9E05D6CE22F7D65100D9E907 /* SPClipToolView.swift */,
-				9E05D6BB22F4402700D9E907 /* SPClipImgVC.swift */,
-				9E05D6D122F7E09F00D9E907 /* SPClipView.swift */,
-			);
-			path = Clip;
-			sourceTree = "<group>";
-		};
 		9E58FB74233364DB0023C79F /* Recording */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +199,7 @@
 				9E7B1BD023053E7B00146422 /* SPImagePickerListCollectionCell.swift */,
 				9E7B1BD223054A3600146422 /* SPAlbumVC.swift */,
 				9EE39663233B73AF006AB687 /* SPBundle.swift */,
+				9EE39681233C52B0006AB687 /* SPLibararyLanguage.swift */,
 			);
 			path = ImagePicker;
 			sourceTree = "<group>";
@@ -282,7 +269,6 @@
 				9E58FB74233364DB0023C79F /* Recording */,
 				9E7B1BCB23053C5000146422 /* ImagePicker */,
 				9E9D05D622FA6CCF00D89C94 /* Resource */,
-				9E05D6BA22F4401900D9E907 /* Clip */,
 				9EDCFA4022EEED0E0058F291 /* Share */,
 				OBJ_8 /* Public */,
 				OBJ_16 /* Request */,
@@ -373,7 +359,7 @@
 			name = SPCommonLibrary;
 			packageProductDependencies = (
 				9EE39679233C4E68006AB687 /* SnapKit */,
-				9EE3967C233C4E84006AB687 /* Alamofire */,
+				9E2B96B3233C5B5E007EDAE7 /* Alamofire */,
 			);
 			productName = SPCommonLibrary;
 			productReference = "SPCommonLibrary::SPCommonLibrary::Product" /* SPCommonLibrary.framework */;
@@ -470,7 +456,7 @@
 			mainGroup = OBJ_5;
 			packageReferences = (
 				9EE39678233C4E68006AB687 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				9EE3967B233C4E84006AB687 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				9E2B96B2233C5B5E007EDAE7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = OBJ_95 /* Products */;
 			projectDirPath = "";
@@ -496,6 +482,7 @@
 				9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */,
 				9EE39674233C4D50006AB687 /* SPCubeMap.c in Sources */,
 				9EE39664233B73AF006AB687 /* SPBundle.swift in Sources */,
+				9EE39682233C52B0006AB687 /* SPLibararyLanguage.swift in Sources */,
 				9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,16 +499,13 @@
 			buildActionMask = 0;
 			files = (
 				9E7B1BD323054A3600146422 /* SPAlbumVC.swift in Sources */,
-				9E05D6D022F7D65B00D9E907 /* SPClipToolView.swift in Sources */,
 				9EDCFA4722EF34F10058F291 /* SPShare.swift in Sources */,
 				9EDCFA4522EF34DE0058F291 /* SPView.swift in Sources */,
 				9EDCFA4622EF34DE0058F291 /* SPQRCode.swift in Sources */,
 				OBJ_152 /* SPArray.swift in Sources */,
-				9E05D6BC22F4402700D9E907 /* SPClipImgVC.swift in Sources */,
 				OBJ_153 /* SPAuthorization.swift in Sources */,
 				OBJ_154 /* SPBase.swift in Sources */,
 				OBJ_155 /* SPColor.swift in Sources */,
-				9E9D05C222F7FAE400D89C94 /* SPClipView.swift in Sources */,
 				OBJ_156 /* SPDevice.swift in Sources */,
 				9E7B1BCD23053C6500146422 /* SPImagePickerVC.swift in Sources */,
 				9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */,
@@ -1060,6 +1044,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9E2B96B2233C5B5E007EDAE7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = "5.0.0-rc.2";
+				kind = branch;
+			};
+		};
 		9EE39678233C4E68006AB687 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -1068,26 +1060,18 @@
 				minimumVersion = 5.0.1;
 			};
 		};
-		9EE3967B233C4E84006AB687 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.9.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9E2B96B3233C5B5E007EDAE7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E2B96B2233C5B5E007EDAE7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		9EE39679233C4E68006AB687 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9EE39678233C4E68006AB687 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		9EE3967C233C4E84006AB687 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9EE3967B233C4E84006AB687 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

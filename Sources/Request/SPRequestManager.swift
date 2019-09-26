@@ -52,16 +52,17 @@ public class SPRequestManager {
         case .head:
             httpMethod = .head
         }
-    
+       
         let dataRequest = AF.request(url, method: httpMethod, parameters: model.parm, encoding: JSONEncoding.default, headers: nil)
         model.isRequest = true
         switch model.reponseFormat {
         case .json:
-            dataRequest.responseJSON { (dataResponse : DataResponse<Any>) in
+          
+            dataRequest.responseJSON { (dataResponse : AFDataResponse<Any>) in
                 sp_dealReequest(dataResponse: dataResponse, model: model, complete: complete)
             }
         case .data:
-            dataRequest.responseData { (dataResponse : DataResponse<Data>) in
+            dataRequest.responseData { (dataResponse : AFDataResponse<Data>) in
                 model.isRequest = false
                 sp_dealComplete(data: dataResponse.value, error: dataResponse.error,errorMsg: nil, complete: complete)
             }
@@ -78,7 +79,7 @@ public class SPRequestManager {
     ///   - dataResponse: 请求返回的数据
     ///   - model: 请求参数model
     ///   - complete: 回调
-    private class func sp_dealReequest(dataResponse : DataResponse<Any>,model : SPRequestModel,complete : SPRequestComplete?){
+    private class func sp_dealReequest(dataResponse : AFDataResponse<Any>,model : SPRequestModel,complete : SPRequestComplete?){
         model.isRequest = false
         
         sp_dealComplete(data:  dataResponse.value, error: dataResponse.error,errorMsg: nil, complete: complete)
