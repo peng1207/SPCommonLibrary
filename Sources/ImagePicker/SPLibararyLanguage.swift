@@ -7,6 +7,7 @@
 //
 
 import Foundation
+/// 框架中的国际化
 class SPLibararyLanguage {
     public static let shareInstance = SPLibararyLanguage()
     fileprivate var libraryBundle : Bundle?

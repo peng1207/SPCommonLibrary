@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import AVFoundation
+/// 二维码管理
 public class SPQRCode {
     /// 创建二维码
     ///

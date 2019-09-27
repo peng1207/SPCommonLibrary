@@ -15,9 +15,13 @@ import Foundation
 /// - head: head 请求
 /// - put: put 请求
 public enum SPHttpMethod {
+    /// get请求
     case get
+    /// post 请求
     case post
+    /// head 请求
     case head
+    /// put 请求
     case put
 }
 /// 返回数据的格式
@@ -26,11 +30,14 @@ public enum SPHttpMethod {
 /// - data: 返回为data
 /// - string: 返回为string
 public enum SPReponseFormat {
+    ///  返回为json
     case json
+    /// 返回为data
     case data
+    /// 返回为string
     case string
 }
-
+/// 请求model
 open class SPRequestModel {
     /// 请求链接
     public var url : String?
@@ -46,6 +53,7 @@ open class SPRequestModel {
     public var timeOut : Int = 30
     /// 调用取消请求
     public var canceBlock : SPRequestCanceBlock?
+    /// 初始化
     public init() {
         
     }

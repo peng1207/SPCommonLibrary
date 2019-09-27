@@ -9,14 +9,17 @@
 import Foundation
 import Alamofire
 import CoreTelephony
-//import Reachability
 /// 网络发生状态通知
 public let SP_NETWORK_NOTIFICATION = "SP_NETWORK_NOTIFICATION"
+/// 网络状态管理
 public class SPNetWorkManager : NSObject {
     
     private static let netManager = SPNetWorkManager()
+    /// 网络状态
     private var netWorkStatus :  NetworkReachabilityManager.NetworkReachabilityStatus = .reachable(NetworkReachabilityManager.NetworkReachabilityStatus.ConnectionType.ethernetOrWiFi)
+    /// 上次的网络状态
     private var netWorkOldStatus : NetworkReachabilityManager.NetworkReachabilityStatus = .unknown
+    /// 移动网络状态
     private var wwanStatus : CTCellularDataRestrictedState = CTCellularDataRestrictedState.restrictedStateUnknown
     private var reachManager : NetworkReachabilityManager!
     class func instance() -> SPNetWorkManager{
@@ -26,7 +29,7 @@ public class SPNetWorkManager : NSObject {
     private func sp_start(){
         
         let manager = NetworkReachabilityManager(host: "www.apple.com")
-      
+        
         manager?.startListening(onUpdatePerforming: { [weak self](status) in
             if let s = self?.netWorkStatus{
                 self?.netWorkOldStatus = s

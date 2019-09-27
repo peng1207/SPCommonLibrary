@@ -43,7 +43,7 @@ public func sp_screenHeight()->CGFloat{
 public func sp_scale(value : CGFloat) -> CGFloat{
     return value / UIScreen.main.scale
 }
-// 获取屏幕分辨率
+/// 获取屏幕分辨率
 public func sp_screenPixels() -> CGSize {
     if let size = UIScreen.main.currentMode?.size {
         return CGSize(width: size.width , height: size.height)
@@ -308,6 +308,7 @@ public func sp_topVC()->UIViewController?{
     
     return resultVC
 }
+/// 获取下个顶层的VC
 private func sp_nextTopVC(vc : UIViewController?)->UIViewController?{
     guard let viewController = vc else {
         return nil

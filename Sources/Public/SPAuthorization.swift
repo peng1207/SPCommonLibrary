@@ -13,7 +13,7 @@ import Speech
 /// 是否有权限回调 auth true 有权限  false 没有权限
 public typealias AuthorizedBlock = (_ auth : Bool) -> Void
 
-// 权限表
+/// 权限表
 open class SPAuthorizatio{
     
     /// 相机权限
