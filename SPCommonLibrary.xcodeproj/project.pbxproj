@@ -28,17 +28,14 @@
 		9E2B96BD233C5ED7007EDAE7 /* SPClipImgVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B96B9233C5ED3007EDAE7 /* SPClipImgVC.swift */; };
 		9E2B96BE233C5ED9007EDAE7 /* SPClipToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B96B7233C5ED3007EDAE7 /* SPClipToolView.swift */; };
 		9E2B96BF233C5EDD007EDAE7 /* SPClipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B96B8233C5ED3007EDAE7 /* SPClipView.swift */; };
-		9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E58FB75233364E90023C79F /* SPRecordingManager.swift */; };
 		9E7B1BCD23053C6500146422 /* SPImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BCC23053C6500146422 /* SPImagePickerVC.swift */; };
 		9E7B1BCF23053E4400146422 /* SPImagePickerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BCE23053E4400146422 /* SPImagePickerListVC.swift */; };
 		9E7B1BD123053E7B00146422 /* SPImagePickerListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BD023053E7B00146422 /* SPImagePickerListCollectionCell.swift */; };
 		9E7B1BD323054A3600146422 /* SPAlbumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7B1BD223054A3600146422 /* SPAlbumVC.swift */; };
 		9E9D05E422FAD14F00D89C94 /* SPString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9D05E222FAD0DC00D89C94 /* SPString.swift */; };
-		9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
 		9EDCFA4522EF34DE0058F291 /* SPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDC27A222EBEA8C00F22529 /* SPView.swift */; };
 		9EDCFA4622EF34DE0058F291 /* SPQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4322EEF27D0058F291 /* SPQRCode.swift */; };
 		9EDCFA4722EF34F10058F291 /* SPShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDCFA4122EEED1B0058F291 /* SPShare.swift */; };
-		9EE39674233C4D50006AB687 /* SPCubeMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39672233C4D50006AB687 /* SPCubeMap.c */; };
 		9EE3967A233C4E68006AB687 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9EE39679233C4E68006AB687 /* SnapKit */; };
 		OBJ_152 /* SPArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* SPArray.swift */; };
 		OBJ_153 /* SPAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* SPAuthorization.swift */; };
@@ -51,35 +48,19 @@
 		OBJ_160 /* SPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* SPRequestManager.swift */; };
 		OBJ_161 /* SPRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* SPRequestModel.swift */; };
 		OBJ_162 /* SPUploadFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* SPUploadFileModel.swift */; };
-		OBJ_165 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 		OBJ_174 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_185 /* SPCommonLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* SPCommonLibraryTests.swift */; };
 		OBJ_186 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* XCTestManifests.swift */; };
 		OBJ_188 /* SPCommonLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SPCommonLibrary::SPCommonLibrary::Product" /* SPCommonLibrary.framework */; };
-		OBJ_190 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9EDC278C22EAE88400F22529 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Alamofire::Alamofire";
-			remoteInfo = Alamofire;
-		};
 		9EDC278D22EAE88400F22529 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SPCommonLibrary::SPCommonLibrary";
 			remoteInfo = SPCommonLibrary;
-		};
-		9EDC278F22EAE88400F22529 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Alamofire::Alamofire";
-			remoteInfo = Alamofire;
 		};
 		9EDC279022EAE88500F22529 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -110,7 +91,6 @@
 		9EE39672233C4D50006AB687 /* SPCubeMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SPCubeMap.c; sourceTree = "<group>"; };
 		9EE39673233C4D50006AB687 /* SPCubeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCubeMap.h; sourceTree = "<group>"; };
 		9EE39681233C52B0006AB687 /* SPLibararyLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPLibararyLanguage.swift; sourceTree = "<group>"; };
-		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* SPAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPAuthorization.swift; sourceTree = "<group>"; };
 		OBJ_100 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
 		OBJ_101 /* SPCommonLibrary.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = SPCommonLibrary.xcworkspace; sourceTree = SOURCE_ROOT; };
@@ -134,20 +114,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_140 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_163 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 				9EE3967A233C4E68006AB687 /* SnapKit in Frameworks */,
 				9E2B96B4233C5B5E007EDAE7 /* Alamofire in Frameworks */,
-				OBJ_165 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +128,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_188 /* SPCommonLibrary.framework in Frameworks */,
-				OBJ_190 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +256,6 @@
 			children = (
 				"SPCommonLibrary::SPCommonLibrary::Product" /* SPCommonLibrary.framework */,
 				"SPCommonLibrary::SPCommonLibraryTests::Product" /* SPCommonLibraryTests.xctest */,
-				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -293,38 +263,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		"Alamofire::Alamofire" /* Alamofire */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_105 /* Build configuration list for PBXNativeTarget "Alamofire" */;
-			buildPhases = (
-				OBJ_108 /* Sources */,
-				OBJ_140 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Alamofire;
-			packageProductDependencies = (
-			);
-			productName = Alamofire;
-			productReference = "Alamofire::Alamofire::Product" /* Alamofire.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_142 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
-			buildPhases = (
-				OBJ_145 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AlamofirePackageDescription;
-			productName = AlamofirePackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
 		"SPCommonLibrary::SPCommonLibrary" /* SPCommonLibrary */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_148 /* Build configuration list for PBXNativeTarget "SPCommonLibrary" */;
@@ -335,7 +273,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_168 /* PBXTargetDependency */,
 			);
 			name = SPCommonLibrary;
 			packageProductDependencies = (
@@ -357,7 +294,6 @@
 			);
 			dependencies = (
 				OBJ_191 /* PBXTargetDependency */,
-				OBJ_193 /* PBXTargetDependency */,
 			);
 			name = SPCommonLibraryTests;
 			productName = SPCommonLibraryTests;
@@ -388,11 +324,6 @@
 				LastSwiftMigration = 9999;
 				LastUpgradeCheck = 9999;
 				ORGANIZATIONNAME = huangshupeng;
-				TargetAttributes = {
-					"Alamofire::Alamofire" = {
-						LastSwiftMigration = 1100;
-					};
-				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SPCommonLibrary" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -412,8 +343,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"Alamofire::Alamofire" /* Alamofire */,
-				"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */,
 				"SPCommonLibrary::SPCommonLibrary" /* SPCommonLibrary */,
 				"SPCommonLibrary::SwiftPMPackageDescription" /* SPCommonLibraryPackageDescription */,
 				"SPCommonLibrary::SPCommonLibraryPackageTests::ProductTarget" /* SPCommonLibraryPackageTests */,
@@ -423,23 +352,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_108 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				9EDCFA4222EEED1B0058F291 /* SPShare.swift in Sources */,
-				9EE39674233C4D50006AB687 /* SPCubeMap.c in Sources */,
-				9E58FB76233364E90023C79F /* SPRecordingManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_145 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_151 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -492,11 +404,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_168 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = 9EDC278C22EAE88400F22529 /* PBXContainerItemProxy */;
-		};
 		OBJ_179 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SPCommonLibrary::SPCommonLibraryTests" /* SPCommonLibraryTests */;
@@ -507,102 +414,13 @@
 			target = "SPCommonLibrary::SPCommonLibrary" /* SPCommonLibrary */;
 			targetProxy = 9EDC278D22EAE88400F22529 /* PBXContainerItemProxy */;
 		};
-		OBJ_193 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = 9EDC278F22EAE88400F22529 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_106 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Alamofire;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_107 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DEFINES_MODULE = YES;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 5.0;
-				TARGET_NAME = Alamofire;
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_143 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		OBJ_144 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		OBJ_149 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 0.0.1.27;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -616,6 +434,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10;
+				MARKETING_VERSION = 0.0.1;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -635,6 +454,7 @@
 		OBJ_150 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 0.0.1.27;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -648,6 +468,7 @@
 					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10;
+				MARKETING_VERSION = 0.0.1;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
@@ -807,24 +628,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_105 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_106 /* Debug */,
-				OBJ_107 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_142 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_143 /* Debug */,
-				OBJ_144 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		OBJ_148 /* Build configuration list for PBXNativeTarget "SPCommonLibrary" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

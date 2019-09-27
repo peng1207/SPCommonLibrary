@@ -20,32 +20,32 @@ public let SP_SYSTEMNAME = UIDevice.current.systemName
 public let SP_MODEL = UIDevice.current.model
 /// 设备区域化型号如A1533
 public let SP_LOCALIZEDMODEL = UIDevice.current.localizedModel
-
-public let SP_DEVICE_SCALE = UIScreen.main.scale  //  设备的比例
-
+/// 设备的比例
+public let SP_DEVICE_SCALE = UIScreen.main.scale
+/// 是否IPAD设备
 public let SP_IS_IPAD = { () -> Bool in
     if SP_DEVICE_TYPE == "iPad" {
         return true
     }else{
         return false
     }
-}()  // 是否IPAD设备
-
+}()
+/// 是否iphone设备
 public let SP_IS_IPHONE = { ( ) -> Bool in
     if SP_DEVICE_TYPE == "iPhone" {
         return true
     }else{
         return false
     }
-}()   // 是否iphone设备
-
+}()
+///  是否ipod设备
 public let SP_IS_IPODTOUCH = { () -> Bool in
     if SP_DEVICE_TYPE == "iPod touch" {
         return true
     }else{
         return false
     }
-} () // 是否ipod设备
+} ()  
 /// 9.0系统以上
 public let SP_VERSION_9_UP = { () -> Bool in
     if #available(iOS 9.0, *){
