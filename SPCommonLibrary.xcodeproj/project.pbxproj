@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		9E05D6B222F42A3F00D9E907 /* SPSampleBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */; };
+		9E0EB7A3233DB773009512F0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0EB7A2233DB773009512F0 /* AVFoundation.framework */; };
 		9E2B96B4233C5B5E007EDAE7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9E2B96B3233C5B5E007EDAE7 /* Alamofire */; };
 		9E2B96B5233C5EA2007EDAE7 /* SPLibararyLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39681233C52B0006AB687 /* SPLibararyLanguage.swift */; };
 		9E2B96B6233C5EB8007EDAE7 /* SPBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE39663233B73AF006AB687 /* SPBundle.swift */; };
@@ -74,6 +75,7 @@
 /* Begin PBXFileReference section */
 		9E05D6A622F3C9A200D9E907 /* SPCommonLibrary_Bridge_Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPCommonLibrary_Bridge_Header.h; sourceTree = "<group>"; };
 		9E05D6B122F42A3F00D9E907 /* SPSampleBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPSampleBuffer.swift; sourceTree = "<group>"; };
+		9E0EB7A2233DB773009512F0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9E2B96B7233C5ED3007EDAE7 /* SPClipToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipToolView.swift; sourceTree = "<group>"; };
 		9E2B96B8233C5ED3007EDAE7 /* SPClipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipView.swift; sourceTree = "<group>"; };
 		9E2B96B9233C5ED3007EDAE7 /* SPClipImgVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPClipImgVC.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				9E0EB7A3233DB773009512F0 /* AVFoundation.framework in Frameworks */,
 				9EE3967A233C4E68006AB687 /* SnapKit in Frameworks */,
 				9E2B96B4233C5B5E007EDAE7 /* Alamofire in Frameworks */,
 			);
@@ -134,6 +137,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E0EB7A1233DB773009512F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E0EB7A2233DB773009512F0 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9E58FB74233364DB0023C79F /* Recording */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +225,7 @@
 				OBJ_101 /* SPCommonLibrary.xcworkspace */,
 				OBJ_102 /* SPCommonLibrary.podspec */,
 				OBJ_103 /* README.md */,
+				9E0EB7A1233DB773009512F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

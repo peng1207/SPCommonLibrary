@@ -115,13 +115,13 @@ end
 #    ss.resources = "Sources/Resource/*.bundle"
 #    ss.dependency "SPCommonLibrary/Public"
 #end
-# 选择图片功能
+# 选择图片功能 图片裁剪功能
 s.subspec "ImageManager" do |ss|
     ss.source_files = "Sources/ImagePicker/**/*"
     ss.dependency "SPCommonLibrary/Public"
     ss.resources = "Sources/Resource/*.bundle"
 end
-# 录音功能
+# 录音功能 文字转语音 语音转文字
 s.subspec "Recording" do |ss|
     ss.source_files = "Sources/Recording/**/*"
     ss.dependency "SPCommonLibrary/Public"
