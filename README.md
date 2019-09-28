@@ -6,18 +6,18 @@
 # 用pod管理
     source 'https://github.com/peng1207/huangshupengSpecs.git'
     source 'https://github.com/CocoaPods/Specs.git'
-    ## 下载所有功能 
+## 下载所有功能 
     pod  'SPCommonLibrary'
-    ## 按需要功能下载
-    ### 下载公共功能
+## 按需要功能下载
+### 下载公共功能
     pod 'SPCommonLibrary/Public'
-    ### 下载分享功能
+### 下载分享功能
     pod 'SPCommonLibrary/Share'
-    ### 下载网络请求和网络监听功能
+### 下载网络请求和网络监听功能
     pod 'SPCommonLibrary/Request'
-    ### 下载从相册中选择图片和对图片裁剪功能
+### 下载从相册中选择图片和对图片裁剪功能
     pod 'SPCommonLibrary/ImageManager'
-    ### 下载录音 文字转语音 语音转文字 音频转格式等功能
+### 下载录音 文字转语音 语音转文字 音频转格式等功能
     pod 'SPCommonLibrary/Recording'
 
 # 需要添加的权限
