@@ -126,6 +126,11 @@ s.subspec "Recording" do |ss|
     ss.source_files = "Sources/Recording/**/*"
     ss.dependency "SPCommonLibrary/Public"
 end
+# 二维码\条形码管理
+s.subspec "CodeManager" do |ss|
+   ss.source_files = "Sources/QRCode/**/*"
+   ss.dependency "SPCommonLibrary/Public"
+end
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
 #  A list of resources included with the Pod. These are copied into the

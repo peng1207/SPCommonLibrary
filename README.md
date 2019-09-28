@@ -19,6 +19,8 @@
     pod 'SPCommonLibrary/ImageManager'
 ### 下载录音 文字转语音 语音转文字 音频转格式等功能
     pod 'SPCommonLibrary/Recording'
+### 二维码、条形码管理
+    pod 'SPCommonLibrary/CodeManager'
 
 # 需要添加的权限
 权限|描述
@@ -28,3 +30,5 @@ NSMicrophoneUsageDescription|录音权限
 NSPhotoLibraryAddUsageDescription|添加图片到相册权限
 NSPhotoLibraryUsageDescription|相册权限
 NSSpeechRecognitionUsageDescription|实时语音转文字的权限
+
+# 功能使用

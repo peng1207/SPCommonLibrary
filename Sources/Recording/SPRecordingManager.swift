@@ -49,7 +49,7 @@ open class SPRecordingManager : NSObject{
     }
     public func sp_init(file : String){
         self.filePath = file
-       
+        
     }
     /// 开启录制  先调用初始化 成功之后在调用
     public func sp_start(){
