@@ -21,10 +21,10 @@
     pod 'SPCommonLibrary/Recording'
 
 # 需要添加的权限
-    权限|描述
-    --|:--:
-    NSCameraUsageDescription|摄像头权限
-    NSMicrophoneUsageDescription|录音权限
-    NSPhotoLibraryAddUsageDescription|添加图片到相册权限
-    NSPhotoLibraryUsageDescription|相册权限
-    NSSpeechRecognitionUsageDescription|实时语音转文字的权限
+权限|描述
+--|:--:
+NSCameraUsageDescription|摄像头权限
+NSMicrophoneUsageDescription|录音权限
+NSPhotoLibraryAddUsageDescription|添加图片到相册权限
+NSPhotoLibraryUsageDescription|相册权限
+NSSpeechRecognitionUsageDescription|实时语音转文字的权限
