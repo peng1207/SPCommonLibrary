@@ -128,7 +128,7 @@ s.subspec "Recording" do |ss|
 end
 # 二维码\条形码管理
 s.subspec "CodeManager" do |ss|
-   ss.source_files = "Sources/QRCode/**/*"
+   ss.source_files = "Sources/CodeManager/**/*"
    ss.dependency "SPCommonLibrary/Public"
 end
 # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

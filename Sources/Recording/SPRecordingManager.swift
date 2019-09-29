@@ -17,7 +17,7 @@ open class SPRecordingManager : NSObject{
             let fileUrl = URL(fileURLWithPath: filePath)
             
             let recorderSetting = [
-                AVEncoderBitRateKey: AVAudioQuality.min
+                AVEncoderBitRateKey: AVAudioQuality.medium
                 /// 采样率
                 ,AVSampleRateKey : 11025
                 ///
