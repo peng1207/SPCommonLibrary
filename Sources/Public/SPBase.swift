@@ -72,9 +72,14 @@ public func sp_log<T>(message : T,file : String = #file,methodName: String = #fu
 public func sp_sync(queueName : String? = "com.queue.defauleQueue" ,complete : @escaping()->Void){
     let queue = DispatchQueue(label: queueName!)
 //    let queue = DispatchQueue(label: sp_getString(string: queueName), qos: DispatchQoS.utility, attributes: .concurrent)
+    // 异步
     queue.async {
          complete()
     }
+    // 同步
+//    queue.sync {
+//        
+//    }
 }
 /// 主线程
 ///
