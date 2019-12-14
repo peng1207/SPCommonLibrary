@@ -91,3 +91,22 @@ public let SP_VERSION_13_UP = { () -> Bool in
     }
     
 }()
+/// 判断当前是否设置深色模式
+public func sp_isDark()->Bool{
+    var isDark = false
+    // 获取当前模式
+    if #available(iOS 13.0, *) {
+        let currentMode = UITraitCollection.current.userInterfaceStyle
+        if (currentMode == .dark) {
+            print("深色模式")
+            isDark = true
+        } else if (currentMode == .light) {
+            print("浅色模式")
+        } else {
+            print("未知模式")
+        }
+    } else {
+        // Fallback on earlier versions
+    }
+    return isDark
+}
