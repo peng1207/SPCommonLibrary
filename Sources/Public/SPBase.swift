@@ -64,7 +64,7 @@ public func sp_log<T>(message : T,file : String = #file,methodName: String = #fu
     print("\(fileName).\(methodName)[\(lineNumber)]\(Date().timeIntervalSince1970):\(message)")
     #endif
 }
-/// 多线程
+/// 异步多线程
 ///
 /// - Parameters:
 ///   - queueName:  线程名字
@@ -76,10 +76,17 @@ public func sp_sync(queueName : String? = "com.queue.defauleQueue" ,complete : @
     queue.async {
          complete()
     }
-    // 同步
-//    queue.sync {
-//        
-//    }
+}
+/// 同步多线程
+/// - Parameters:
+///   - queueName: 线程名字
+///   - complete: 回调
+public func sp_synchro(queueName : String? = "com.queue.synchroQueue" ,complete : @escaping()->Void){
+    let queue = DispatchQueue(label: queueName!)
+     // 同步
+    queue.sync {
+        complete()
+    }
 }
 /// 主线程
 ///
