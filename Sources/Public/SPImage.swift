@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import SnapKit
 public extension UIImage {
     
     /// 颜色转图片
