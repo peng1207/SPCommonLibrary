@@ -69,11 +69,11 @@ public func sp_log<T>(message : T,file : String = #file,methodName: String = #fu
 /// - Parameters:
 ///   - queueName:  线程名字
 ///   - complete: 回调
-public func sp_sync(queueName : String? = "com.queue.defauleQueue" ,complete : ()->Void){
+public func sp_sync(queueName : String? = "com.queue.defauleQueue" ,complete : @escaping()->Void){
     let queue = DispatchQueue(label: queueName!)
 //    let queue = DispatchQueue(label: sp_getString(string: queueName), qos: DispatchQoS.utility, attributes: .concurrent)
-    queue.sync {
-        complete()
+    queue.async {
+         complete()
     }
 }
 /// 主线程

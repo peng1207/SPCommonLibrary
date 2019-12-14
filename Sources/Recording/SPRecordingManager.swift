@@ -15,7 +15,7 @@ open class SPRecordingManager : NSObject{
     private func sp_init(){
         do {
             let fileUrl = URL(fileURLWithPath: filePath)
-            
+            /// mp3采样率 11025
             let recorderSetting = [
                 AVEncoderBitRateKey: AVAudioQuality.medium
                 /// 采样率
@@ -32,6 +32,12 @@ open class SPRecordingManager : NSObject{
             self.audioRecorder = try AVAudioRecorder(url: fileUrl, settings:  recorderSetting)
             self.audioRecorder?.delegate = self
             self.audioRecorder?.isMeteringEnabled = true
+            self.audioRecorder?.prepareToRecord()
+            /// 获取音量
+//            self.audioRecorder?.updateMeters()
+//            pow(10, 0.05 * self.audioRecorder?.peakPower(forChannel: 0))
+//            self.audioRecorder?.peakPower(forChannel: 0)
+             
         }catch {
             sp_log(message: "初始化失败")
         }
@@ -53,7 +59,6 @@ open class SPRecordingManager : NSObject{
     }
     /// 开启录制  先调用初始化 成功之后在调用
     public func sp_start(){
-        audioRecorder?.prepareToRecord()
         audioRecorder?.record()
     }
     /// 停止录制
