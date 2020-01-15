@@ -71,12 +71,10 @@ open class SPRequestManager {
             }
         case .data:
             dataRequest.responseData { (dataResponse : AFDataResponse<Data>) in
-                model.isRequest = false
                 sp_dealComplete(data: dataResponse.value, error: dataResponse.error,errorMsg: nil, complete: complete)
             }
         case .string:
             dataRequest.responseString { (dataResponse : DataResponse) in
-                model.isRequest = false
                 sp_dealComplete(data: dataResponse.value, error: dataResponse.error,errorMsg: nil, complete: complete)
             }
         }
@@ -156,6 +154,7 @@ open class SPRequestManager {
             }
             model.isRequest = false
         }
+
     }
     
     
